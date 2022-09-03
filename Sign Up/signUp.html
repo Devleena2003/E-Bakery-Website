@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="shortcut icon"
+      href="../Cake Pics/logo.png"
+      type="image/x-icon"
+      style="width: 100px"
+    />
+    <link rel="stylesheet" href="../Sign Up/signUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="../Sign Up/signUp.js"></script>
+  </head>
+  <body>
+    <section class="sign-up">
+      <div class="form-login">
+        <div class="form-img">
+          <img src="../Cake Pics/cake-img.jpg" alt="" />
+        </div>
+        <div class="form-content">
+          <img src="../Cake Pics/logo.png" alt="" style="width: 115px" />
+          <h2>Welcome to E-Bakery</h2>
+          <form action="#" style="margin: 11px">
+            <div class="field">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="input"
+                id="name"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                class="input"
+                id="email"
+                required
+              />
+              <div class="field-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="input"
+                id="password"
+                required
+              />
+              <div class="field-icon">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="button">
+              <button
+                onclick="myfunction()"
+                class="btn"
+                id="button"
+                type="submit"
+              >
+                Sign Up
+              </button>
+            </div>
+            <div class="form-link">
+              <span
+                >Already have an account?
+                <a href="#" class="log-in"> Sign In</a></span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
