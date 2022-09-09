@@ -110,7 +110,7 @@ form .btn {
 .title-div{
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 } 
 
@@ -165,4 +165,12 @@ form .btn {
 
 .password{
   width: 100%;
+}
+
+.logintoregister{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(42, 44, 41);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
