@@ -10,7 +10,7 @@ async function loginUser(event){
     const data = {username,password};
     // console.log(data);
 
-    const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/auth/login/',{
+    const result = await fetch('http://localhost:3000/api/auth/login',{
         method: 'POST',
         mode:'cors',
         headers:{
@@ -19,20 +19,10 @@ async function loginUser(event){
         body: JSON.stringify(data)
     }).then((res)=>res.json());
 
-    console.log(result);
-    // console.log(result.accessToken)
-
-
-    //storing the json web access token in local storage
-
-    localStorage.setItem("accessToken",result.accessToken)
-    // console.log(localStorage.getItem("accessToken"))
+    // console.log(result.success);
     
-    
-    //if login succesfull redirect to next page
-
     if(result.success){
-        window.location.assign("./Landing/landing.html"); 
+        window.location.assign("next.html");  //next.html will be the redirect page if login is succesfull
     }
 }
 
