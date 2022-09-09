@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="../Sign Up/signUp.js"></script>
+    <!-- <script src="../Sign Up/signUp.js"></script> -->
   </head>
   <body>
     <section class="sign-up">
@@ -30,11 +30,11 @@
         <div class="form-content">
           <img src="../Cake Pics/logo.png" alt="" style="width: 115px" />
           <h2>Welcome to E-Bakery</h2>
-          <form action="#" style="margin: 11px">
+          <form style="margin: 11px" id="formelement">
             <div class="field">
               <input
                 type="text"
-                placeholder="Enter Your Name"
+                placeholder="Username"
                 class="input"
                 id="name"
                 required
@@ -43,7 +43,7 @@
             <div class="field">
               <input
                 type="email"
-                placeholder="Enter Your Email"
+                placeholder="Email"
                 class="input"
                 id="email"
                 required
@@ -55,19 +55,18 @@
             <div class="field">
               <input
                 type="password"
-                placeholder="Enter Password"
+                placeholder="Password"
                 class="input"
                 id="password"
                 required
               />
               <div class="field-icon">
-                <i class="fa-solid fa-lock"></i>
+                <i class="lock fa-solid fa-lock"></i>
               </div>
             </div>
 
             <div class="button">
               <button
-                onclick="myfunction()"
                 class="btn"
                 id="button"
                 type="submit"
@@ -78,12 +77,13 @@
             <div class="form-link">
               <span
                 >Already have an account?
-                <a href="#" class="log-in"> Sign In</a></span
+                <a href="../index.html" class="log-in"> Sign In</a></span
               >
             </div>
           </form>
         </div>
       </div>
     </section>
+    <script src="../Sign Up/signUp.js"></script>
   </body>
 </html>

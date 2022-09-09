@@ -110,7 +110,7 @@ form .btn {
 .title-div{
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 } 
 
@@ -128,7 +128,6 @@ form .btn {
 .new-account{
   width:330px;
   height:55px;
-  position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -138,7 +137,9 @@ form .btn {
   background-color: #fff;
   color: #302121;
   font-weight: bold;
-  
+  cursor: pointer;
+  gap: 0.4rem;
+  font-size: 1rem;
 }
 
 .login-text{
@@ -165,4 +166,14 @@ form .btn {
 
 .password{
   width: 100%;
+}
+
+
+/* register to login link */
+
+.logintoregister{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #232121;
 }

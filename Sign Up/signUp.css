@@ -36,6 +36,7 @@ body {
   display: flex;
   position: relative;
 }
+
 .input {
   padding: 17px;
   margin: 10px 0 10px 60px;
@@ -43,6 +44,11 @@ body {
   border: none;
   border-radius: 8px;
 }
+
+input:focus{
+  outline: none;
+}
+
 .field-icon {
   position: absolute;
   top: 22px;
