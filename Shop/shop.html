@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Bakery</title>
-    <script type="module" src="../Shop/web.js"></script>
+    <!-- <script type="module" src="../Shop/web.js"></script> -->
     <link
       rel="shortcut icon"
       href="../Cake Pics/logo.png"
@@ -61,12 +61,41 @@
         </div>
       </nav>
 
-      <section id="products"></section>
+
+      <!-- product section display -->
+      
+      <section id="prodcontainer">
+
+        <!-- product card template -->
+        <template data-user-card>
+          <div class="card">
+            <!-- here goe the image -->
+              <div class="img-container" image-container>
+                  <img src="" image/>
+              </div>
+              <!-- title of image -->
+              <div class="title" data-title></div>
+
+              <!-- description of image -->
+              <div class="description" data-description></div>
+
+              <!-- buttons in the card -->
+              <div class="buttons-section">
+                  <button class="btn" viewButton>Add to cart</button>
+                  <!-- <button class="btn" viewButton>Buy</button> -->
+              </div>
+          </div>
+      </template>
+        
+      </section>
       <section id="pagination">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
       </section>
     </main>
+
+    <script src="./shop.js"></script>
+    
   </body>
 </html>
