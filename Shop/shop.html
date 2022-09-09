@@ -23,10 +23,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+
+    <!-- main container -->
+
     <main id="main-container">
       <!-- <div class="background">
       <img class="bg-img" src="../Hero+Navbar/BG.png" alt="" />
     </div> -->
+
+    <!-- navbar section -->
+    
       <nav class="navbar">
         <div class="top-left">
           <!--logo-->
@@ -37,7 +43,9 @@
         </div>
 
         <div class="right">
+
           <!--login,signup,bag-->
+          
           <div class="bag">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +69,12 @@
         </div>
       </nav>
 
+      <!-- search bar section -->
+      
+      <div class="search-container">
+        <label for="search">Search Products</label>
+        <input type="text" id = "search" product-search>
+      </div>
 
       <!-- product section display -->
       
@@ -86,15 +100,16 @@
               </div>
           </div>
       </template>
-        
       </section>
+
+      <!-- pagination section -->
+
       <section id="pagination">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
       </section>
     </main>
-
     <script src="./shop.js"></script>
     
   </body>
