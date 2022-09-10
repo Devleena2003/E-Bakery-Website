@@ -324,10 +324,10 @@ img{
   border-radius: 50%;
   top:10px;
   left:10px;
-  opacity: 0;
+  /* opacity: 0; */
   text-align: center;
 }
 
-.bag.live::after{
+/* .bag.live::after{
   opacity: 1;
-}
+} */

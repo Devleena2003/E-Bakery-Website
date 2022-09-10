@@ -8,9 +8,12 @@ userProf = document.querySelector('[userp]')
 
 
 window.onload = function(){
+    const incre = document.querySelector('.bag')
+    
     if(localStorage.getItem("accessToken") != null){
         loginbtn.classList.add('hide')
         signupbtn.classList.add('hide')
+        incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
         const userprof = userProf.content.cloneNode(true).children[0]
         rightsec.append(userprof)
     }
@@ -91,7 +94,8 @@ async function opencart(e){
     const incre = document.querySelector('.bag')
     let add = Number(incre.getAttribute('data-count') || 0)
     incre.setAttribute('data-count',add+1)
-    incre.classList.add('live')
+    // incre.classList.add('live')
+    localStorage.setItem("cartvalue",add+1);
 
     const prodId = e.target.value
     console.log(prodId)

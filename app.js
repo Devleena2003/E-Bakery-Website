@@ -23,6 +23,7 @@ async function loginUser(event){
     if(result.success){
         localStorage.setItem("accessToken",result.accessToken)
         localStorage.setItem("userid",result.others._id)
+        localStorage.setItem("cartvalue",0)
         window.location.assign("./Landing/landing.html"); 
     }
 }
