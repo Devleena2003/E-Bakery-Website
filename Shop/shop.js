@@ -90,39 +90,44 @@ fetch('https://evening-refuge-31987.herokuapp.com/api/products')
 
 async function opencart(e){
 
-    
     const incre = document.querySelector('.bag')
-    let add = Number(incre.getAttribute('data-count') || 0)
-    incre.setAttribute('data-count',add+1)
-    // incre.classList.add('live')
-    localStorage.setItem("cartvalue",add+1);
 
-    const prodId = e.target.value
-    console.log(prodId)
+    if(localStorage.getItem("accessToken") == null){
+        window.alert("You must be logged in to add items to cart")
 
-    const userId = localStorage.getItem("userid");
-    const products = [
-        {
-            "productId" : `${prodId}`
-        }
-    ]
+    }else{
+        let add = Number(incre.getAttribute('data-count') || 0)
+        incre.setAttribute('data-count',add+1)
+        // incre.classList.add('live')
+        localStorage.setItem("cartvalue",add+1);
 
-    prodData = {userId,products};
-    console.log(prodData)
+        const prodId = e.target.value
+        console.log(prodId)
 
-    // const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
-    //     method: 'POST',
-    //     mode:'cors',
-    //     headers:{
-    //         'Content-type': 'application/json',
-    //         'token' : `Bearer ${localStorage.getItem("accessToken")}`
-    //     },
-    //     body: JSON.stringify(prodData)
-    // })
-    //     .then((result) =>result.json())
+        const userId = localStorage.getItem("userid");
+        const products = [
+            {
+                "productId" : `${prodId}`
+            }
+        ]
 
-    // if(result.success ===undefined){
-    //     window.alert(result)
-    // }
-    // console.log(result)
+        prodData = {userId,products};
+        console.log(prodData)
+
+        // const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
+        //     method: 'POST',
+        //     mode:'cors',
+        //     headers:{
+        //         'Content-type': 'application/json',
+        //         'token' : `Bearer ${localStorage.getItem("accessToken")}`
+        //     },
+        //     body: JSON.stringify(prodData)
+        // })
+        //     .then((result) =>result.json())
+
+        // if(result.success ===undefined){
+        //     window.alert(result)
+        // }
+        // console.log(result)
+}
 }
