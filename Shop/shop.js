@@ -16,6 +16,18 @@ window.onload = function(){
     }
 }
 
+loginbtn.addEventListener('click',()=>{
+    if(localStorage.getItem("accessToken") == null){
+        window.location.assign('../index.html')
+    }
+});
+
+signupbtn.addEventListener('click',()=>{
+    if(localStorage.getItem("accessToken") == null){
+        window.location.assign('../Sign Up/signUp.html')
+    }
+});
+
 
 // search function implementation
 
