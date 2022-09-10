@@ -6,7 +6,6 @@ async function loginUser(event){
     const username = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // console.log(username,password);
     const data = {username,password};
     // console.log(data);
 
@@ -19,10 +18,11 @@ async function loginUser(event){
         body: JSON.stringify(data)
     }).then((res)=>res.json());
 
-    // console.log(result.success);
+    console.log(result)
     
     if(result.success){
-        window.location.assign("./Landing/landing.html");  //next.html will be the redirect page if login is succesfull
+        localStorage.setItem("accessToken",result.accessToken)
+        window.location.assign("./Landing/landing.html"); 
     }
 }
 
