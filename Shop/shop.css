@@ -90,6 +90,7 @@ body {
   height: 20px;
   transform: scale(200%);
   cursor: pointer;
+  position: relative;
 }
 .signup {
   color: #302121;
@@ -310,4 +311,14 @@ img{
   height:20px;
   transform: scale(200%);
   margin-left:20px;
+}
+
+.bag::after{
+  content: '';
+  position:absolute;
+  background-color: red;
+  width: 50px;
+  border-radius: 50%;
+  top:100px;
+  right: 50px;
 }
