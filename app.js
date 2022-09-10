@@ -18,10 +18,11 @@ async function loginUser(event){
         body: JSON.stringify(data)
     }).then((res)=>res.json());
 
-    console.log(result)
+    console.log(result.others)
     
     if(result.success){
         localStorage.setItem("accessToken",result.accessToken)
+        localStorage.setItem("userid",result.others._id)
         window.location.assign("./Landing/landing.html"); 
     }
 }

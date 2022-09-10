@@ -62,7 +62,53 @@ fetch('https://evening-refuge-31987.herokuapp.com/api/products')
         header.textContent = prod['title'];
         body.textContent = prod['description'];
         vbtn.classList.add(prod['_id']);
+        vbtn.value = prod['_id']
         productContainer.append(card);
         return {title: prod.title,element:card}
     })
 });
+
+
+
+// function opencart(){
+//     const cartitem = document.querySelectorAll('.cart-btn')
+//     const cart = document.
+//     console.log(cartitem)
+//     // console.log(cartitem[1])
+//     // console.log(cartitem.parentElement.children[0].classList[2])
+
+//     // console.log(cartitem.parentElement.parentElement)
+//     // const itemId = cartitem.parentElement.children[0].classList[2];
+//     // console.log(itemId)
+// }
+
+
+
+
+async function opencart(e){
+    // console.log(e.target.value)
+    const prodId = e.target.value
+    console.log(prodId)
+
+    const userId = localStorage.getItem("userid");
+    const products = [
+        {
+            "productId" : `${prodId}`
+        }
+    ]
+
+    prodData = {userId,products};
+
+    const result =await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
+        method: 'POST',
+        mode:'cors',
+        headers:{
+            'Content-type': 'application/json',
+            'token' : `Bearer ${localStorage.getItem("accessToken")}`
+        },
+        body: JSON.stringify(prodData)
+    })
+        .then((result) =>result.json())
+
+    console.log(result)
+}
