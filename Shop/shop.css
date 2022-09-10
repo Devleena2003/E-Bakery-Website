@@ -314,11 +314,20 @@ img{
 }
 
 .bag::after{
-  content: '';
+  content: attr(data-count);
   position:absolute;
   background-color: red;
-  width: 50px;
+  color: floralwhite;
+  font-size: 0.5rem;
+  width: 10px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  top:100px;
-  right: 50px;
+  top:10px;
+  left:10px;
+  opacity: 0;
+  text-align: center;
+}
+
+.bag.live::after{
+  opacity: 1;
 }
