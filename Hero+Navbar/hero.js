@@ -2,6 +2,9 @@ cartbtn = document.querySelector('.bag');
 loginbtn = document.querySelector('.login')
 signupbtn = document.querySelector('.signup')
 ordernow = document.querySelector('.order')
+rightsec = document.querySelector('.right')
+userProf = document.querySelector('[userp]')
+
 
 
 cartbtn.addEventListener('click',()=>{
@@ -36,5 +39,7 @@ window.onload = function(){
     if(localStorage.getItem("accessToken") != null){
         loginbtn.classList.add('hide')
         signupbtn.classList.add('hide')
+        const userprof = userProf.content.cloneNode(true).children[0]
+        rightsec.append(userprof)
     }
 }
