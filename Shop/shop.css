@@ -303,3 +303,11 @@ img{
 .hide{
   display: none;
 }
+
+.user{
+  color: #302121;
+  width:20px;
+  height:20px;
+  transform: scale(200%);
+  margin-left:20px;
+}

@@ -1,6 +1,21 @@
 const productContainer = document.getElementById('prodcontainer')
 const userCard = document.querySelector("[data-user-card]")
 
+loginbtn = document.querySelector('.login')
+signupbtn = document.querySelector('.signup')
+rightsec = document.querySelector('.right')
+userProf = document.querySelector('[userp]')
+
+
+window.onload = function(){
+    if(localStorage.getItem("accessToken") != null){
+        loginbtn.classList.add('hide')
+        signupbtn.classList.add('hide')
+        const userprof = userProf.content.cloneNode(true).children[0]
+        rightsec.append(userprof)
+    }
+}
+
 
 // search function implementation
 
