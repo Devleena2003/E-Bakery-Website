@@ -202,10 +202,11 @@ that's upto the designer */
 
 #prodcontainer{
   display: grid;
-   grid-template-columns: repeat(auto-fit ,minmax(330px,1fr));
-   gap:2.5rem;
+   grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+   gap:2rem;
+   padding-right: 5%;
    /* row-gap: 2rem; */
-   margin:0 15%;
+   /* margin:0 15%; */
 }
 
 .card{
@@ -310,4 +311,44 @@ img{
   height:20px;
   transform: scale(200%);
   margin-left:20px;
+}
+
+/* filter section */
+
+.content-div{
+  display: flex;
+  gap: 2rem;
+
+}
+
+.filtersection{
+  width: 30%;
+  border: 1px solid black;
+  list-style: none;
+  padding: 2rem;
+  height: min-content;
+  margin: 20px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.filtersection ul{
+  list-style: none;
+  transition: 0.2s background-color ease-in;
+}
+
+.filtersection li{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filtersection li:hover{
+  background-color: gray;
+}
+
+.prodcontainer{
+  width: 70%;
 }

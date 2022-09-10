@@ -87,30 +87,45 @@
       </div>
 
       <!-- product section display -->
+
+      <div class="content-div">
+
+
+        <!-- filter section -->
+        
+        <div class="filtersection">
+          <ul class="filterlist">
+            <li class="filteritem">prod1</li>
+            <li class="filteritem">Bread</li>
+            <li class="filteritem">working</li>
+            <li class="filteritem">interesting</li>
+          </ul>
+        </div>
+        <section id="prodcontainer">
+
+          <!-- product card template -->
+          <template data-user-card>
+            <div class="card">
+              <!-- here goe the image -->
+                <div class="img-container" image-container>
+                    <img src="" image/>
+                </div>
+                <!-- title of image -->
+                <div class="title" data-title></div>
+  
+                <!-- description of image -->
+                <div class="description" data-description></div>
+  
+                <!-- buttons in the card -->
+                <div class="buttons-section">
+                    <button class="btn" viewButton>Add to cart</button>
+                    <!-- <button class="btn" viewButton>Buy</button> -->
+                </div>
+            </div>
+        </template>
+        </section>
+      </div>
       
-      <section id="prodcontainer">
-
-        <!-- product card template -->
-        <template data-user-card>
-          <div class="card">
-            <!-- here goe the image -->
-              <div class="img-container" image-container>
-                  <img src="" image/>
-              </div>
-              <!-- title of image -->
-              <div class="title" data-title></div>
-
-              <!-- description of image -->
-              <div class="description" data-description></div>
-
-              <!-- buttons in the card -->
-              <div class="buttons-section">
-                  <button class="btn" viewButton>Add to cart</button>
-                  <!-- <button class="btn" viewButton>Buy</button> -->
-              </div>
-          </div>
-      </template>
-      </section>
 
       <!-- pagination section -->
 

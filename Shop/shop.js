@@ -1,10 +1,42 @@
 const productContainer = document.getElementById('prodcontainer')
 const userCard = document.querySelector("[data-user-card]")
 
-loginbtn = document.querySelector('.login')
-signupbtn = document.querySelector('.signup')
-rightsec = document.querySelector('.right')
-userProf = document.querySelector('[userp]')
+const loginbtn = document.querySelector('.login')
+const signupbtn = document.querySelector('.signup')
+const rightsec = document.querySelector('.right')
+const userProf = document.querySelector('[userp]')
+
+
+const listitem = document.querySelector('.filterlist')
+// for(let i=0;i<listitem.length;i++){
+//     // console.log("kasjfvbj")
+//     listitem[i].addEventListener('click',(e)=>{
+//         console.log(e.target.textContent)
+//         console.log("ajdvbjh")
+//     })
+// }
+
+
+//flter ist functionality
+
+listitem.addEventListener('click',(e)=>{
+    // console.log(listitem)
+    // console.log(listitem.children[1])
+    const val = e.target.textContent;
+
+    product_data.forEach(prod =>{
+        const visible = prod.title.toLowerCase().includes(val)
+        if (prod.element.classList.contains('hide')){
+            prod.element.classList.remove("hide"    )
+        }
+        else{
+            prod.element.classList.toggle("hide", !visible)
+        }
+    })
+})
+
+
+
 
 
 window.onload = function(){
