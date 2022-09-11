@@ -78,6 +78,8 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+    background-color: #EEDDCC;
+    cursor: pointer;
 }
 
 .bag{
@@ -85,6 +87,7 @@ body{
     width:20px;
     height:20px;
     transform: scale(200%);
+    cursor: pointer;
 }
 .signup{
     color: #302121; 
@@ -97,6 +100,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #EEDDCC;
+    cursor: pointer;
 }
 
 .logo a{
@@ -156,7 +161,7 @@ body{
 
 .text{
     font-weight: 600;
-    font-size:80px;
+    font-size:70px;
     margin-bottom: 60px;
     line-height: 90px;
 }
@@ -189,15 +194,16 @@ body{
 .order{
     color: #fff; 
     font-size:1.5rem; 
-    width:300px;
+    width:250px;
     height:80px;
     background-color:#302121;
     padding:10px;
     border: 2px solid #302121;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .left{
