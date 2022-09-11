@@ -51,7 +51,7 @@ searchInput.addEventListener("input", (e) =>{
 fetch('https://evening-refuge-31987.herokuapp.com/api/products')
    .then((res) => res.json())
    .then((data) =>{
-    // console.log(data);
+    console.log(data);
     // console.log(data['product']);
     product_data = data['product'].map(prod =>{
         // console.log(prod); 
@@ -59,6 +59,7 @@ fetch('https://evening-refuge-31987.herokuapp.com/api/products')
         // console.log(card);
         const imgc = card.querySelector('[image]')
         const header = card.querySelector('[data-title]')
+        // console.log(header)
         const body = card.querySelector('[data-description]')
         const vbtn = card.querySelector('[viewButton]')
         imgc.src = prod['image']
