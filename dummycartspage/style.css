@@ -4,4 +4,12 @@
     padding: 20px;
     border: 1px solid black;
     font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.prodimg{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 20px;
 }

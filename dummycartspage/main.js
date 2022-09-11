@@ -27,10 +27,12 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
             const prodname = prodcard.querySelector('.productname')
             const prodprice = prodcard.querySelector('.productprice')
             const proddesc = prodcard.querySelector('.productdesc')
+            const prodimg = prodcard.querySelector('.prodimg')
 
             prodname.textContent = proditem.title
             prodprice.textContent = proditem.price
             proddesc.textContent = proditem.description
+            prodimg.src = proditem.image
 
             maincontainer.append(prodcard)
 
