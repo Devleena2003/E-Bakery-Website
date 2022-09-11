@@ -112,22 +112,22 @@ async function opencart(e){
         ]
 
         prodData = {userId,products};
-        console.log(prodData)
+        // console.log(prodData)
 
-        // const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
-        //     method: 'POST',
-        //     mode:'cors',
-        //     headers:{
-        //         'Content-type': 'application/json',
-        //         'token' : `Bearer ${localStorage.getItem("accessToken")}`
-        //     },
-        //     body: JSON.stringify(prodData)
-        // })
-        //     .then((result) =>result.json())
+        const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
+            method: 'POST',
+            mode:'cors',
+            headers:{
+                'Content-type': 'application/json',
+                'token' : `Bearer ${localStorage.getItem("accessToken")}`
+            },
+            body: JSON.stringify(prodData)
+        })
+        .then((result) =>result.json())
 
         // if(result.success ===undefined){
         //     window.alert(result)
         // }
-        // console.log(result)
+        console.log(result)
 }
 }
