@@ -90,6 +90,7 @@ body {
   height: 20px;
   transform: scale(200%);
   cursor: pointer;
+  position: relative;
 }
 .signup {
   color: #302121;
@@ -303,3 +304,30 @@ img{
 .hide{
   display: none;
 }
+
+.user{
+  color: #302121;
+  width:20px;
+  height:20px;
+  transform: scale(200%);
+  margin-left:20px;
+}
+
+.bag::after{
+  content: attr(data-count);
+  position:absolute;
+  background-color: red;
+  color: floralwhite;
+  font-size: 0.5rem;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top:10px;
+  left:10px;
+  /* opacity: 0; */
+  text-align: center;
+}
+
+/* .bag.live::after{
+  opacity: 1;
+} */
