@@ -1,0 +1,127 @@
+.main-container{
+    display: flex;
+}
+
+.img-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-img{
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+form{
+    border: 1px solid black;
+    /* padding:10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .form-field {
+    font-size:20px;
+    color: #343333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+
+  form input {
+    font-family: inherit;
+    width: 120%;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    padding: 1rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #343333;
+    text-indent: 40px;
+  }
+
+  form .updatebtn {
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.9rem 2.5rem;
+    text-align: center;
+    background-color: #302121;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    width:150px;
+  }
+
+
+.upper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-end;
+  }
+  
+  .title-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .logo-img{
+    width:100px;
+    height: 100px;
+    margin-right: 5%;
+  
+  }
+  .login-svg{
+    position: relative;
+    left: 30px;
+  }
+
+  .form-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top:-50px;
+  }
+  
+  .email{
+    width: 100%;
+  }
+  
+  .password{
+    width: 100%;
+  }
