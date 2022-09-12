@@ -46,7 +46,9 @@ async function removefunc(e){
     // console.log(e)
     // console.log(e.path[3].children[0].classList[1])
 
-    const productId = e.path[3].children[0].classList[1]
+    // const productId = e.path[3].children[0].classList[1]
+    // console.log(e.path[2].children[1].children[0].classList[1])
+    const productId = e.path[2].children[1].children[0].classList[1]
     const data = {productId}
 
     fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{

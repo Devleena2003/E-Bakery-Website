@@ -1,3 +1,10 @@
+body{
+
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+
 .my-cart{
     text-align: center;
     color: #302121;
@@ -9,7 +16,7 @@
     height: max-content;    
     padding: 20px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1rem;
     display: flex;
     gap: 1rem;
@@ -20,12 +27,14 @@
     width: 100px;
     aspect-ratio: 1;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .card{
     width:1000px;
     background-color: #eeddcc;
-    cursor: pointer;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .cart-items-container{
@@ -96,6 +105,7 @@
     font-size: 20px;
     transition: 0.2s color ease-in;
     font-size: 1.7rem;
+    color: #302121;
 }
 
 .remove:hover {
@@ -108,4 +118,24 @@
 
 .minus:hover {
     background-color: rgb(220, 220, 189);
+}
+
+
+.paybutton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkoutbtn{
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
