@@ -1,10 +1,15 @@
 const productContainer = document.getElementById('prodcontainer')
 const userCard = document.querySelector("[data-user-card]")
+const cartBagBtn = document.querySelector('.right .bag')
 
 loginbtn = document.querySelector('.login')
 signupbtn = document.querySelector('.signup')
 rightsec = document.querySelector('.right')
 userProf = document.querySelector('[userp]')
+
+cartBagBtn.addEventListener('click',()=>{
+    window.location.assign('../cartspage/index.html')
+})
 
 
 window.onload = function(){
