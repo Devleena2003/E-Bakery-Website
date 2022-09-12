@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-img {
+  width: 100vw;
+  height: 500vh;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+.top-left {
+  display: flex;
+  margin-right: 50%;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: none;
+  position: fixed;
+  z-index: 5;
+  margin-bottom: 50px;
+  background-color: #eeddcc;
+}
+
+.link-group {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.login {
+  color: #302121;
+  font-size: 1rem;
+  width: 100px;
+  background-color: none;
+  padding: 10px;
+  border: 2px solid #302121;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.bag {
+  color: #302121;
+  width: 20px;
+  height: 20px;
+  transform: scale(200%);
+  cursor: pointer;
+}
+.signup {
+  color: #302121;
+  font-size: 1rem;
+  width: 100px;
+  background-color: none;
+  padding: 10px;
+  border: 2px solid #302121;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo a {
+  color: #302121;
+  opacity: 1;
+  text-decoration: none;
+  padding: 10px 0px;
+  line-height: 80px;
+  transition: 0.5s;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* #products {
+  padding-top: 80px;
+}
+#products h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+} */
+
+/* .products-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.product-box {
+  width: 30%;
+
+  min-width: 250px;
+  padding: 16px 12px;
+  border: 1px solid #cce7d0;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  border-radius: 5px;
+  margin: 15px 0;
+  transition: 0.2s ease-in-out;
+}
+.product-box:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.products-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.products-info {
+  margin-top: 20px;
+  padding-right: 100px;
+}
+[data-title] {
+  font-size: 30px;
+}
+
+[data-description] {
+  font-size: 20px;
+  padding: 10px;
+} */
+/* .cart button {
+  padding: 15px;
+  border: 2px solid #302121;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+} */
+/* .cart button:hover {
+  transform: scale(1.05);
+} */
+
+/* whats this going to be used for? */
+
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: #eeddcc;
+  border: 1 px solid#302121;
+  color: #302121;
+  padding: 10px;
+}
+
+/* products section*/
+/* converted to grid format u can change to flex if u want
+that's upto the designer */
+
+#prodcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2.5rem;
+  /* row-gap: 2rem; */
+  margin: 0 15%;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: floralwhite;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  background-color: #8fc866;
+  transform: scale(1.05);
+}
+
+.img-container {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 20px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+}
+
+/* comment :  make changes to design as necssary */
+/* this page can now render elements from database and then dispaly them on the page */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* search filter styles */
+
+.search-container {
+  margin-left: 50%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateX(-50%);
+}
+
+#search {
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid gray;
+}
+
+#search:focus {
+  outline: none;
+}
+
+/* small little search functionality trick */
+/* to hide elements that's not needed while searching */
+
+.hide {
+  display: none;
+}
