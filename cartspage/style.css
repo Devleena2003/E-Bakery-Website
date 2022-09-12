@@ -51,3 +51,57 @@
     color:#302121;
 }
 
+.price-buttons{
+    display: flex;
+    flex-direction:row;
+    margin-top: 20px;
+}
+
+.price{
+    width: 60px;
+    height:40px;
+    background-color: #fff;
+    border-radius:5px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.plus{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.minus {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.remove{
+    margin-left: 400px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.remove:hover {
+    background-color: rgb(220, 220, 189);
+}
+
+.plus:hover{
+    background-color: rgb(220, 220, 189);
+}
+
+.minus:hover {
+    background-color: rgb(220, 220, 189);
+}
