@@ -22,7 +22,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
         cartxt = document.querySelector('.cart-text')
 
         cartxt.classList.remove('hide')
-    }else if(!data.cart.products){
+    }else if(!data.cart.products.length){
         cck.classList.add('hide')
 
         cartxt = document.querySelector('.cart-text')
