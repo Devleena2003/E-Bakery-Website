@@ -73,7 +73,7 @@ async function removefunc(e){
 async function payement(e){
     // console.log(totalcartvalue)
     
-    fetch(`http://localhost:5000/api/getorder/${amount}`,{
+    fetch(`https://evening-refuge-31987.herokuapp.com/api/getorder/${amount}`,{
         method:'GET',
         mode:'cors',
         headers:{
