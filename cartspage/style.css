@@ -89,13 +89,17 @@
     margin-left: 400px;
     width: 100px;
     height: 40px;
-    border-radius: 5px;
-    background-color: #fff;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    transition: 0.2s color ease-in;
+    font-size: 1.7rem;
 }
 
 .remove:hover {
-    background-color: rgb(220, 220, 189);
+    color: red;
 }
 
 .plus:hover{
