@@ -19,7 +19,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
         .then(res =>res.json())
         .then(data => {
             const proditem = data.product
-            // console.log(proditem)
+            console.log(proditem)
 
             const prodcard = prodtemp.content.cloneNode(true).children[0]
             console.log(prodcard)

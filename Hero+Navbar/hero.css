@@ -79,6 +79,10 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+<<<<<<< HEAD
+    background-color: #EEDDCC;
+=======
+>>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
     cursor: pointer;
 }
 
@@ -88,8 +92,12 @@ body{
     width:20px;
     height:20px;
     transform: scale(200%);
+<<<<<<< HEAD
+    cursor: pointer;
+=======
     background:none;
     border: none;
+>>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
 }
 .signup{
     color: #302121; 
@@ -102,6 +110,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+    background-color: #EEDDCC;
+=======
+>>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
     cursor: pointer;
 }
 
@@ -162,7 +174,7 @@ body{
 
 .text{
     font-weight: 600;
-    font-size:80px;
+    font-size:70px;
     margin-bottom: 60px;
     line-height: 90px;
 }
@@ -195,15 +207,16 @@ body{
 .order{
     color: #fff; 
     font-size:1.5rem; 
-    width:300px;
+    width:250px;
     height:80px;
     background-color:#302121;
     padding:10px;
     border: 2px solid #302121;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .left{

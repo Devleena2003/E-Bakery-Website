@@ -89,7 +89,7 @@ body{
 .order {
     color: #fff;
     font-size: 1rem;
-    width: 250px;
+    width: 200px;
     height: 60px;
     background-color: #302121;
     padding: 8px;
@@ -99,6 +99,7 @@ body{
     justify-content: center;
     align-items: center;
     margin:40px 0px;
+    cursor: pointer;
 }
 
 .specific-time p{
