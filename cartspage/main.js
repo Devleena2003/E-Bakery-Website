@@ -48,7 +48,7 @@ async function removefunc(e){
     const productId = e.path[3].children[0].classList[1]
     const data = {productId}
 
-    fetch(`http://localhost:5000/api/carts/${localStorage.getItem("userid")}`,{
+    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
         method:'PUT',
         mode:'cors',
         headers:{
