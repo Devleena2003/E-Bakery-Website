@@ -14,6 +14,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
 }).then(res =>res.json())
   .then(data => data.cart.products)
   .then(data => {
+    // console.log(data)
     data.forEach(prod =>{
         fetch(`https://evening-refuge-31987.herokuapp.com/api/products/${prod.productId}`)
         .then(res =>res.json())

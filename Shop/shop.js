@@ -18,7 +18,23 @@ window.onload = function(){
     if(localStorage.getItem("accessToken") != null){
         loginbtn.classList.add('hide')
         signupbtn.classList.add('hide')
-        incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
+
+        const cartv = fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+            method: 'GET',
+            mode:'cors',
+            headers:{
+                'Content-type': 'application/json',
+                'token' : `Bearer ${localStorage.getItem("accessToken")}`
+            },
+        }).then(res =>res.json())
+          .then(data => data.cart.products)
+          .then(data=>{
+            console.log(data.length)
+            incre.setAttribute('data-count',data.length)
+          })
+
+        // incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
+
         const userprof = userProf.content.cloneNode(true).children[0]
         rightsec.append(userprof)
 
@@ -137,9 +153,6 @@ async function opencart(e){
         })
         .then((result) =>result.json())
 
-        // if(result.success ===undefined){
-        //     window.alert(result)
-        // }
         console.log(result)
 }
 }

@@ -45,6 +45,27 @@ window.onload = function(){
         rightsec.append(userprof)
 
         const incre = document.querySelector('.bag')
-        incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
+        // incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
+
+        const cartv = fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+            method: 'GET',
+            mode:'cors',
+            headers:{
+                'Content-type': 'application/json',
+                'token' : `Bearer ${localStorage.getItem("accessToken")}`
+            },
+        }).then(res =>res.json())
+          .then(data => data.cart.products)
+          .then(data=>{
+            console.log(data.length)
+            incre.setAttribute('data-count',data.length)
+          })
+
+          user = document.querySelector('.user')
+          user.addEventListener('click',()=>{
+              window.location.assign('../userProfilePage/index.html')
+          })
+          
+          
     }
 }
