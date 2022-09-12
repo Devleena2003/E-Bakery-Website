@@ -25,7 +25,7 @@ async function loginUser(event){
         localStorage.setItem("userid",result.others._id)
         fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${result.others._id}`,{
             method: 'GET',
-            moder:'cors',
+            mode:'cors',
             headers:{
                 'Content-type': 'application/json',
                 'token': `Bearer ${result.accessToken}`
