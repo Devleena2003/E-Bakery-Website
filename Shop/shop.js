@@ -7,16 +7,9 @@ signupbtn = document.querySelector('.signup')
 rightsec = document.querySelector('.right')
 userProf = document.querySelector('[userp]')
 
-// console.log(userProf.content.children[0].classList.value)
-// user = document.querySelector('.user')
-
-// console.log(user)
-
 cartBagBtn.addEventListener('click',()=>{
     window.location.assign('../cartspage/index.html')
 })
-
-// userProf.children
 
 
 window.onload = function(){
@@ -32,7 +25,7 @@ window.onload = function(){
 
         user = document.querySelector('.user')
         user.addEventListener('click',()=>{
-            window.location.assign('../cartspage/index.html')
+            window.location.assign('../userProfilePage/index.html')
         })
     }
 }
