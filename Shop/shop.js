@@ -1,10 +1,15 @@
 const productContainer = document.getElementById('prodcontainer')
 const userCard = document.querySelector("[data-user-card]")
+const cartBagBtn = document.querySelector('.right .bag')
 
 loginbtn = document.querySelector('.login')
 signupbtn = document.querySelector('.signup')
 rightsec = document.querySelector('.right')
 userProf = document.querySelector('[userp]')
+
+cartBagBtn.addEventListener('click',()=>{
+    window.location.assign('../cartspage/index.html')
+})
 
 
 window.onload = function(){
@@ -16,6 +21,12 @@ window.onload = function(){
         incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
         const userprof = userProf.content.cloneNode(true).children[0]
         rightsec.append(userprof)
+
+
+        user = document.querySelector('.user')
+        user.addEventListener('click',()=>{
+            window.location.assign('../userProfilePage/index.html')
+        })
     }
 }
 
