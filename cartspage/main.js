@@ -110,7 +110,10 @@ async function payement(e){
                             'token': `Bearer ${localStorage.getItem("accessToken")}`
                         },
                     }).then(res=>res.json())
-                      .then(data=>console.log(data))
+                      .then(data=>{
+                        console.log(data)
+                        window.location.assign('../Shop/shop.html')
+                    })
                 }
                 console.log(response.razorpay_order_id);
                 console.log(response.razorpay_signature)
