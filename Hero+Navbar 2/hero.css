@@ -62,28 +62,8 @@ body{
 
 .right{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
     align-items: center;
-    gap: 0.1rem;
-}
-
-.login {
-    color: #302121; 
-    font-size:1rem; 
-    width:100px;
-    background-color:inherit;
-    padding:10px;
-    border: 2px solid #302121;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
-<<<<<<< HEAD
-    background-color: #EEDDCC;
-=======
->>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
-    cursor: pointer;
 }
 
 
@@ -92,28 +72,16 @@ body{
     width:20px;
     height:20px;
     transform: scale(200%);
-<<<<<<< HEAD
+    margin-right:20px;
     cursor: pointer;
-=======
-    background:none;
-    border: none;
->>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
 }
-.signup{
-    color: #302121; 
-    font-size:1rem; 
-    width:100px;
-    background-color:inherit;
-    padding:10px;
-    border: 2px solid #302121;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-<<<<<<< HEAD
-    background-color: #EEDDCC;
-=======
->>>>>>> 3c252acd4fa4d4df13c9a2d6ee751913d0f736d5
+
+.user{
+    color: #302121;
+    width:20px;
+    height:20px;
+    transform: scale(200%);
+    margin-left:20px;
     cursor: pointer;
 }
 
@@ -212,7 +180,7 @@ body{
     background-color:#302121;
     padding:10px;
     border: 2px solid #302121;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,35 +193,3 @@ body{
     right:-30px;
 }
 
-
-
-
-
-
-.hide{
-    display: none;
-}
-
-.user{
-    color: #302121;
-    width:20px;
-    height:20px;
-    transform: scale(200%);
-    margin-left:20px;
-}
-
-/* display the cart value if user logged in */
-.bag::after{
-    content: attr(data-count);
-    position:absolute;
-    background-color: red;
-    color: floralwhite;
-    font-size: 0.5rem;
-    width: 10px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    top:10px;
-    left:10px;
-    /* opacity: 0; */
-    text-align: center;
-  } 
