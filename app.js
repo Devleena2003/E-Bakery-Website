@@ -25,7 +25,7 @@ async function loginUser(event){
         localStorage.setItem("userid",result.others._id)
         fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${result.others._id}`,{
             method: 'GET',
-            moder:'cors',
+            mode:'cors',
             headers:{
                 'Content-type': 'application/json',
                 'token': `Bearer ${result.accessToken}`
@@ -38,7 +38,7 @@ async function loginUser(event){
                 console.log(data)
                 localStorage.setItem("cartvalue",data.cart.products.length)
             }
-            window.location.assign("./Landing/landing.html"); 
+            window.location.assign("./Hero+Navbar/hero.html"); 
           })
 
         // localStorage.setItem("cartvalue",0)

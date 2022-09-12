@@ -319,6 +319,7 @@ img{
   height:20px;
   transform: scale(200%);
   margin-left:20px;
+  cursor: pointer;
 }
 
 .bag::after{
