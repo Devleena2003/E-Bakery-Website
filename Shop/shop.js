@@ -27,10 +27,12 @@ window.onload = function(){
                 'token' : `Bearer ${localStorage.getItem("accessToken")}`
             },
         }).then(res =>res.json())
-          .then(data => data.cart.products)
-          .then(data=>{
-            console.log(data.length)
-            incre.setAttribute('data-count',data.length)
+          .then(data =>{
+            // console.log(data)
+            if(data.cart === null)
+                incre.setAttribute('data-count',0)
+            else if(!data.cart.products.length || data.cart.products.length)
+                  incre.setAttribute('data-count',data.cart.products.length)
           })
 
         // incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
