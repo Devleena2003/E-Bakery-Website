@@ -241,3 +241,19 @@ body{
     transform: scale(200%);
     margin-left:20px;
 }
+
+/* display the cart value if user logged in */
+.bag::after{
+    content: attr(data-count);
+    position:absolute;
+    background-color: red;
+    color: floralwhite;
+    font-size: 0.5rem;
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top:10px;
+    left:10px;
+    /* opacity: 0; */
+    text-align: center;
+  } 

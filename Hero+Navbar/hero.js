@@ -41,5 +41,8 @@ window.onload = function(){
         signupbtn.classList.add('hide')
         const userprof = userProf.content.cloneNode(true).children[0]
         rightsec.append(userprof)
+
+        const incre = document.querySelector('.bag')
+        incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
     }
 }
