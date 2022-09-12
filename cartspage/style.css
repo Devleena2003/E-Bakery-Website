@@ -127,7 +127,7 @@ body{
     justify-content: flex-end;
 }
 
-.checkoutbtn{
+#rzp-button1,.checkout{
     padding: 20px;
     margin: 20px;
     width: 200px;
@@ -138,4 +138,8 @@ body{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+}
+
+.hide{
+    display: none;
 }
