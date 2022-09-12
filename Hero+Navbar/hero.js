@@ -12,6 +12,8 @@ cartbtn.addEventListener('click',()=>{
 
     if(localStorage.getItem("accessToken") == null){
         window.location.assign('../index.html')
+    }else{
+            window.location.assign('../cartspage/index.html')
     }
 })
 
