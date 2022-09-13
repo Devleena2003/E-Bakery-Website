@@ -36,14 +36,19 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
 
     }else{data = data.cart.products;
         cck.classList.remove('hide')
-    console.log(data)
+    // console.log(data)
     data.forEach(prod =>{
+        // console.log(prod)
         fetch(`https://evening-refuge-31987.herokuapp.com/api/products/${prod.productId}`)
         .then(res =>res.json())
         .then(data => {
             const proditem = data.product
             console.log(proditem)
-            amount+=proditem.price
+            const nitems = prod.quantity
+            // console.log(nitems)
+            
+            
+            amount+=proditem.price*nitems
 
             const prodcard = prodtemp.content.cloneNode(true).children[0]
             // console.log(prodcard)
@@ -52,14 +57,97 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
             const prodprice = prodcard.querySelector('.productprice')
             const proddesc = prodcard.querySelector('.productdesc')
             const prodimg = prodcard.querySelector('.prodimg')
+            const itemcnt = prodcard.querySelector('.itemcount')
 
             prodname.textContent = proditem.title
             prodname.classList.add(proditem._id)
+            itemcnt.textContent = nitems
             prodprice.textContent = proditem.price
             proddesc.textContent = proditem.description
             prodimg.src = proditem.image
 
             maincontainer.append(prodcard)
+
+
+
+            prodcard.querySelector('.minus').addEventListener('click',()=>{
+
+                itemcnt.textContent--
+                if(itemcnt.textContent==='0'){
+
+                    const productId = proditem._id
+                    console.log({productId})
+
+                    
+                    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+                        method:'PUT',
+                        mode:'cors',
+                        headers:{
+                            'Content-type': 'application/json',
+                            'token' : `Bearer ${localStorage.getItem("accessToken")}`
+                        },
+                        body:JSON.stringify({productId})
+                    }).then(res=>res.json())
+                      .then(data=>{
+                        console.log(data)
+                        window.location.assign('./index.html')
+                    })
+                }else{
+
+                    const userId = localStorage.getItem("userid");
+                    const productId = proditem._id
+                    // console.log({productId})
+
+                    
+                    fetch(`http://localhost:5000/api/carts/${itemcnt.textContent}`,{
+                        method:'POST',
+                        mode:'cors',
+                        headers:{
+                            'Content-type': 'application/json',
+                            'token' : `Bearer ${localStorage.getItem("accessToken")}`
+                        },
+                        body:JSON.stringify({userId,productId})
+                    }).then(res=>res.json())
+                      .then(data=>{
+                        console.log(data)
+                        // window.location.assign('./index.html')
+                    })
+                    
+                }
+
+                // console.log(itemcnt.textContent)
+                
+            })
+            prodcard.querySelector('.plus').addEventListener('click',()=>{
+
+                itemcnt.textContent++
+
+                const userId = localStorage.getItem("userid");
+                const products =
+                    {
+                        "productId" : `${proditem._id}`,
+                    }
+        
+                
+                const prodData = {userId,products}
+                fetch('http://localhost:5000/api/carts',{
+                method: 'POST',
+                mode:'cors',
+                headers:{
+                    'Content-type': 'application/json',
+                    'token' : `Bearer ${localStorage.getItem("accessToken")}`
+                },
+                body: JSON.stringify(prodData)
+            })
+            .then((result) =>result.json())
+            .then(data => {
+                console.log(data);
+                window.location.assign('./index.html')
+            })
+                
+
+
+            })
 
         })        
     })
@@ -70,11 +158,13 @@ async function removefunc(e){
     // console.log(e)
     // console.log(e.path[3].children[0].classList[1])
 
-    // const productId = e.path[3].children[0].classList[1]
+    const productId = e.path[3].children[0].classList[1]
     // console.log(e.path[2].children[1].children[0].classList[1])
 
-    const productId = e.path[2].children[1].children[0].classList[1]
+    // const productId = e.path[2].children[1].children[0].classList[1]
     const data = {productId}
+
+    // console.log(data)
 
     fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
         method:'PUT',
@@ -87,7 +177,7 @@ async function removefunc(e){
     }).then(res=>res.json())
       .then(data=>{
         console.log(data)
-        window.location.assign('./index.html')
+        // window.location.assign('./index.html')
     })
 }
 
