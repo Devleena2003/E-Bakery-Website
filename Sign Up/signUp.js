@@ -32,7 +32,7 @@ form.addEventListener('submit',registerUser);
         // console.log(result);
     
         if(result.success){
-            window.location.assign('../index.html')
+            window.location.assign('../Login/index.html')
         }
     }
     

@@ -110,7 +110,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
                     }).then(res=>res.json())
                       .then(data=>{
                         console.log(data)
-                        // window.location.assign('./index.html')
+                        window.location.assign('./index.html')
                     })
                     
                 }
