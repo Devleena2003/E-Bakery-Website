@@ -137,7 +137,8 @@ async function opencart(e){
         const userId = localStorage.getItem("userid");
         const products =
             {
-                "productId" : `${prodId}`
+                "productId" : `${prodId}`,
+                "quantity":1
             }
 
         prodData = {userId,products};
