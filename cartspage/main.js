@@ -99,7 +99,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
                     // console.log({productId})
 
                     
-                    fetch(`http://localhost:5000/api/carts/${itemcnt.textContent}`,{
+                    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${itemcnt.textContent}`,{
                         method:'POST',
                         mode:'cors',
                         headers:{
@@ -130,7 +130,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
         
                 
                 const prodData = {userId,products}
-                fetch('http://localhost:5000/api/carts',{
+                fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
                 method: 'POST',
                 mode:'cors',
                 headers:{
