@@ -221,7 +221,16 @@ body {
   width: 20px;
   height: 20px;
   transform: scale(200%);
-  margin-left: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logout-button {
+  color: #302121;
+  width: 20px;
+  height: 20px;
+  transform: scale(200%);
+  margin-left: 30px;
   cursor: pointer;
 }
 
