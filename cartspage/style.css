@@ -1,11 +1,86 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body{
     background-color: #FBAB7E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
+  .navbar {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    /* margin-bottom: 5rem; */
+    background-color: #eeddcc;
+    background-color: none;
+  }
+
+  .top-left {
+    display: flex;
+    margin-right: 50%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+
+  .logo a {
+    color: #302121;
+    text-decoration: none;
+    padding: 10px 0px;
+    /* line-height: 80px; */
+    transition: 0.5s;
+    font-size: 35px;
+    font-weight: bold;
+  } 
+  
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #302121;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding-top: 15px;
+  }
+
+  .user{
+    color: #302121;
+    width:20px;
+    height:20px;
+    transform: scale(200%);
+    cursor: pointer;
+  }
+
+  .logo-user{
+    font-size:17px;
+  }
+
 .my-cart{
+    margin-top: 50px;
     text-align: center;
     color: #302121;
     font-size: 50px;

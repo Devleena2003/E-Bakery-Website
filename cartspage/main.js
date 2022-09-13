@@ -1,6 +1,11 @@
 
 const prodtemp = document.querySelector('[productcard]')
 const maincontainer = document.querySelector('[product-item-container]')
+const usr = document.querySelector('.logo-user')
+
+usr.addEventListener('click',()=>{
+    window.location.assign('../userProfilePage/index.html')
+})
 
 const pdata = []
 let amount = 0
