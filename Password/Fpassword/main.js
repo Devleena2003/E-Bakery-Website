@@ -53,7 +53,7 @@ sub.addEventListener('click',async (e)=>{
             })
 
             if(res.ok){
-                window.location.assign("../../index.html")
+                window.location.assign("../../Login/index.html")
             }   
         } )
     }else{

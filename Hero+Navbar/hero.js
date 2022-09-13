@@ -11,7 +11,7 @@ cartbtn.addEventListener('click',()=>{
     //if there si no accesToken get the user to login first
 
     if(localStorage.getItem("accessToken") == null){
-        window.location.assign('../index.html')
+        window.location.assign('../Login/index.html')
     }else{
             window.location.assign('../cartspage/index.html')
     }
@@ -19,7 +19,7 @@ cartbtn.addEventListener('click',()=>{
 
 loginbtn.addEventListener('click',()=>{
     if(localStorage.getItem("accessToken") == null){
-        window.location.assign('../index.html')
+        window.location.assign('../Login/index.html')
     }
 });
 
