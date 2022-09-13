@@ -138,7 +138,6 @@ async function opencart(e){
         const products =
             {
                 "productId" : `${prodId}`,
-                "quantity":1
             }
 
         prodData = {userId,products};

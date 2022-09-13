@@ -197,7 +197,7 @@
 
 
 .paybutton{
-    width: 100%;
+    width: max-content;
     display: flex;
     justify-content: flex-end;
 }
@@ -237,4 +237,26 @@
 svg{
     max-width :60%;
     padding :5rem 3rem;
+}
+
+.buyinfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ordertotal{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center ;
+    margin: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #302121;
+    font-size: 1.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FBAB7E;
+    border: none;
 }

@@ -21,6 +21,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
 }).then(res =>res.json())
   .then(data =>{
     const cck = document.querySelector('.checkout')
+    const ordertot = document.querySelector('.ordertotal')
     
     if(data.cart === null){
         cck.classList.add('hide')
@@ -36,6 +37,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
 
     }else{data = data.cart.products;
         cck.classList.remove('hide')
+        ordertot.classList.remove('hide')
     // console.log(data)
     data.forEach(prod =>{
         // console.log(prod)
@@ -49,6 +51,8 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
             
             
             amount+=proditem.price*nitems
+            const ordertot = document.querySelector('.ordertotal')
+            ordertot.textContent = `Order Total : Rs ${amount}`
 
             const prodcard = prodtemp.content.cloneNode(true).children[0]
             // console.log(prodcard)
@@ -177,7 +181,7 @@ async function removefunc(e){
     }).then(res=>res.json())
       .then(data=>{
         console.log(data)
-        // window.location.assign('./index.html')
+        window.location.assign('./index.html')
     })
 }
 
