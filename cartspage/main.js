@@ -14,9 +14,24 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
         'token' : `Bearer ${localStorage.getItem("accessToken")}`
     },
 }).then(res =>res.json())
-  .then(data => data.cart.products)
-  .then(data => {
-    // console.log(data)
+  .then(data =>{
+    const cck = document.querySelector('.checkout')
+    
+    if(data.cart === null){
+        cck.classList.add('hide')
+        cartxt = document.querySelector('.cart-text')
+
+        cartxt.classList.remove('hide')
+    }else if(!data.cart.products.length){
+        cck.classList.add('hide')
+
+        cartxt = document.querySelector('.cart-text')
+
+        cartxt.classList.remove('hide')
+
+    }else{data = data.cart.products;
+        cck.classList.remove('hide')
+    console.log(data)
     data.forEach(prod =>{
         fetch(`https://evening-refuge-31987.herokuapp.com/api/products/${prod.productId}`)
         .then(res =>res.json())
@@ -42,7 +57,8 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
             maincontainer.append(prodcard)
 
         })        
-    })    
+    })
+}    
   })  
   
 async function removefunc(e){
@@ -115,8 +131,8 @@ async function payement(e){
                         window.location.assign('../Shop/shop.html')
                     })
                 }
-                console.log(response.razorpay_order_id);
-                console.log(response.razorpay_signature)
+                // console.log(response.razorpay_order_id);
+                // console.log(response.razorpay_signature)
             },
             "notes": {
                 "address": "Razorpay Corporate Office"

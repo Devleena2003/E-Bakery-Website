@@ -143,3 +143,23 @@ body{
 .hide{
     display: none;
 }
+
+.cart-empty{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #eeddcc;
+
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family :'Maison Neue';
+    font-weight: 300;
+}
+
+svg{
+    max-width :60%;
+    padding :5rem 3rem;
+}
