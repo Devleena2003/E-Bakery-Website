@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   background-repeat: no-repeat;
   padding-bottom: 50px;
+  background-color: #eeddcc;
 }
 
 .background {
@@ -212,7 +213,7 @@ that's upto the designer */
 }
 
 .card{
-  /* border: 2px solid black; */
+  border: 1px solid #302121;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 10px;
   background-color: floralwhite;
