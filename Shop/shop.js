@@ -23,17 +23,31 @@ const listitem = document.querySelector('.filterlist')
 listitem.addEventListener('click',(e)=>{
     // console.log(listitem)
     // console.log(listitem.children[1])
-    const val = e.target.textContent;
+    const val = e.target.textContent.toLowerCase();
+    // console.log(val)
+    // console.log(product_data)
+
+    if(val === "all"){
+        product_data.forEach(prod =>{
+            const visible = prod.title.toLowerCase().includes(val)
+            prod.element.classList.remove("hide", visible)
+        })
+    }
+
+    else{
 
     product_data.forEach(prod =>{
+        prod.element.classList.remove("hide")
         const visible = prod.title.toLowerCase().includes(val)
+        console.log(visible)
         if (prod.element.classList.contains('hide')){
-            prod.element.classList.remove("hide"    )
+            prod.element.classList.remove("hide")
         }
         else{
             prod.element.classList.toggle("hide", !visible)
         }
     })
+}
 })
 
 

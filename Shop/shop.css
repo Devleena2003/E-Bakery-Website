@@ -212,7 +212,8 @@ that's upto the designer */
 }
 
 .card{
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 10px;
   background-color: floralwhite;
   padding: 1rem;
@@ -328,13 +329,14 @@ img{
 
 .content-div{
   display: flex;
-  gap: 2rem;
+  gap: 8rem;
 
 }
 
 .filtersection{
-  width: 30%;
-  border: 1px solid black;
+  width: max-content;
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   list-style: none;
   padding: 2rem;
   height: min-content;
@@ -349,6 +351,7 @@ img{
 }
 
 .filtersection li{
+  width: max-content;
   padding: 10px;
   font-size: 1.2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -356,9 +359,25 @@ img{
   cursor: pointer;
 }
 
-.filtersection li:hover{
-  background-color: gray;
+li button{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #302121;
+  font-size: 1rem;
+  font-weight: bold;
 }
+
+li button:focus{
+  background-color: #eeddcc;
+}
+
+/* .filtersection li:hover{
+  background-color: gray;
+} */
 
 .prodcontainer{
   width: 70%;
