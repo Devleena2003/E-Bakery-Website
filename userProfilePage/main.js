@@ -83,9 +83,9 @@ loginbtn = document.querySelector('.login')
 signupbtn = document.querySelector('.signup')
 rightsec = document.querySelector('.right')
 
-cartBagBtn.addEventListener('click',()=>{
-    window.location.assign('../cartspage/index.html')
-})
+// cartBagBtn.addEventListener('click',()=>{
+//     window.location.assign('../cartspage/index.html')
+// })
 
 window.onload = function(){
     const incre = document.querySelector('.bag')

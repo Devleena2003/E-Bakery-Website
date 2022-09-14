@@ -16,9 +16,19 @@ async function loginUser(event){
             'Content-type': 'application/json'
         },
         body: JSON.stringify(data)
-    }).then((res)=>res.json());
+    }).then((res)=>res.json())
 
-    console.log(result.others)
+    console.log(result)
+    if(result === "NO such user/Wrong Credentials"){
+        window.alert("No such User Exists")
+        document.getElementById('email').value = ""
+        document.getElementById('password').value = ""
+    }else if(result === "Wrong credentials"){
+        window.alert("Wrong Credentials")
+        document.getElementById('password').value = ""
+    }
+
+    // console.log(result.others)
     
     if(result.success){
         localStorage.setItem("accessToken",result.accessToken)
@@ -41,8 +51,7 @@ async function loginUser(event){
             window.location.assign("../Hero+Navbar/hero.html"); 
           })
 
-        // localStorage.setItem("cartvalue",0)
-        // window.location.assign("./Landing/landing.html"); 
+
         }
 }
 
