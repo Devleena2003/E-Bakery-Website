@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../Shop/shop.css" />
+    <link rel="stylesheet" href="../Cart/cart.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -37,7 +37,7 @@
           <!--logo-->
           <img class="logo-img" src="../Cake Pics/logo.png" alt="" />
           <div class="logo">
-            <a href="../Hero+Navbar/hero.html"><u>E-BAKERY</u></a>
+            <a href="#"><u>E-BAKERY</u></a>
           </div>
         </div>
 
@@ -64,25 +64,6 @@
           </div>
           <div class="login">LOGIN</div>
           <div class="signup">SIGN UP</div>
-
-          <template userp>
-            <div class="user">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-person-circle"
-                viewBox="0 0 16 16"
-              >
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path
-                  fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                />
-              </svg>
-            </div>
-          </template>
         </div>
       </nav>
 
@@ -95,53 +76,29 @@
 
       <!-- product section display -->
 
-      <div class="content-div">
-
-
-        <!-- filter section -->
-        
-        <div class="filtersection">
-          <ul class="filterlist">
-            <li class="filteritem">prod1</li>
-            <li class="filteritem">Bread</li>
-            <li class="filteritem">working</li>
-            <li class="filteritem">interesting</li>
-          </ul>
-        </div>
-        <section id="prodcontainer">
-
-          <!-- product card template -->
-          <template data-user-card>
-            <div class="card">
-              <!-- here goe the image -->
-                <div class="img-container" image-container>
-                    <img src="" image/>
-                </div>
-                <!-- title of image -->
-                <div class="title" data-title></div>
-  
-                <!-- description of image -->
-                <div class="description" data-description></div>
-  
-                <!-- buttons in the card -->
-                <div class="buttons-section">
-                    <button class="btn" viewButton>Add to cart</button>
-                    <!-- <button class="btn" viewButton>Buy</button> -->
-                </div>
+      <section id="prodcontainer">
+        <!-- product card template -->
+        <template data-user-card>
+          <div class="card">
+            <!-- here goe the image -->
+            <div class="img-container" image-container>
+              <img src="" image />
             </div>
+            <!-- title of image -->
+            <div class="title" data-title></div>
+
+            <!-- description of image -->
+            <div class="description" data-description></div>
+
+            <!-- buttons in the card -->
+            <div class="buttons-section">
+              <button class="btn" viewButton>Add to cart</button>
+              <!-- <button class="btn" viewButton>Buy</button> -->
+            </div>
+          </div>
         </template>
-        </section>
-      </div>
-      
-
-      <!-- pagination section -->
-
-      <!-- <section id="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-      </section> -->
+      </section>
     </main>
-    <script src="./shop.js"></script>
+    <script src="./cart.js"></script>
   </body>
 </html>

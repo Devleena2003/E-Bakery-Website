@@ -1,68 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hero.css">
-    <title>Hero+Nav</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>E-Bakery</title>
+    <link
+      rel="shortcut icon"
+      href="../Cake Pics/logo.png"
+      type="image/x-icon"
+      style="width: 100px"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="hero.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-  <div class="background">
-    <img class="bg-img" src="BG.png" alt="">
-  </div>
+  </head>
+
+  <body>
+    <div class="background">
+      <img class="bg1-img" src="../Hero+Navbar/BG.png" alt="" />
+    </div>
     <nav class="navbar">
-        <div class="top-left"> <!--logo-->
-            <img class="logo-img" src="Logo.png" alt="">
-            <div class="logo"><a href="../Hero+Navbar/hero.html"><u>E-BAKERY</u></a></div>
+      <div class="top-left">
+        <!--logo-->
+        <img class="logo-img" src="Logo.png" alt="" />
+        <div class="logo">
+          <a href="../Hero+Navbar/hero.html"><u>E-BAKERY</u></a>
         </div>
-        <ul class="link-group"> <!--sections-->   
-            <li class="linkactive"><a href="../Hero+Navbar/hero.html"><b>HOME</b></a></li>
-            <li class="link"><a href="../Landing/landing.html"><b>ABOUT US</b></a></li>
-            <li class="link"><a href="#Service-section"><b>SERVICES</b></a></li>
-            <li class="link"><a href="#Explore-section"><b>EXPLORE</b></a></li>
-            <li class="link"><a href="#Review-section"><b>REVIEWS</b></a></li>
+      </div>
+      <ul class="link-group">
+        <!--sections-->
+        <li class="linkactive">
+          <a href="../Hero+Navbar/hero.html"><b>HOME</b></a>
+        </li>
+        <li class="link">
+          <a href="#about"><b>ABOUT US</b></a>
+        </li>
 
-        </ul>
+        <li class="link">
+          <a href="#explore"><b>EXPLORE</b></a>
+        </li>
+        <li class="link">
+          <a href="#service"><b>SERVICES</b></a>
+        </li>
+        <li class="link">
+          <a href="#review"><b>REVIEWS</b></a>
+        </li>
+      </ul>
 
-        <div class="right"><!--login,signup,bag-->
-            <div class="bag">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                </svg>
-            </div>
-            <!-- <a href="../index.html" log><button class="login">LOGIN</button></a> -->
-            <button class="login">LOGIN</button>
-            <button class="signup">SIGN UP</button>
-
-
-            <template userp>
-                <div class="user">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                </div>
-            </template>
-            
-            
+      <div class="right">
+        <!--login,signup,bag-->
+        <div class="bag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bag-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+            />
+          </svg>
         </div>
+        <!-- <a href="../index.html" log><button class="login">LOGIN</button></a> -->
+        <button class="login">LOGIN</button>
+        <button class="signup">SIGN UP</button>
+
+        <!-- <template userp>
+          <div class="user">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+        </template> -->
+
+
+        <div class="user">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+            id="userprof"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+        </div>
+
+        <div class="logout-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-box-arrow-right"
+            viewBox="0 0 16 16"
+            id="logout-button"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+            />
+          </svg>
+        </div>
+      </div>
     </nav>
     <section class="home-section">
-        <div class="content"><!--text and image-->
-            <div class="left">
-                <div class="text">WE OFFER <br> THE BEST WE <br> HAVE</div>
-                <button class="order">ORDER NOW</button>
-            </div>
-            <div class="mainImg">
-                <img class="vector" src="Vector.png" alt="">
-                <img id="mainImg" src="Cake-image.jpg" alt="">
-                <img class="vector" src="Vector.png" alt="">
-            </div>
+      <div class="content">
+        <!--text and image-->
+        <div class="left">
+          <div class="text">
+            WE OFFER <br />
+            THE BEST WE <br />
+            HAVE
+          </div>
+          <button class="order">ORDER NOW</button>
         </div>
+        <div class="mainImg">
+          <img class="vector" src="Vector.png" alt="" />
+          <img id="mainImg" src="Cake-image.jpg" alt="" />
+          <img class="vector" src="Vector.png" alt="" />
+        </div>
+      </div>
     </section>
-  <script src="hero.js"></script>
-</body>
+    <section id="about">
+      <div class="about-con">
+        <h2>About Us</h2>
+        <div class="main-about">
+          <div class="about-img">
+            <img src="../Cake Pics/about.jpg" alt="" />
+          </div>
+          <div class="about-text">
+            Established on the principles of quality and efficiency, E-BAKERY
+            and services Pvt. Ltd., is an emerging service provider in India’s
+            growingfood sector. Led by a highly experienced leadership team, the
+            company will steadily expand to have a pan India presence. E-BAKERY
+            focuses on the consumer and the business-to-business market. Our
+            commitment to customer satisfaction is foremost. The E-BAKERY team
+            is dedicated to provide exceptional service and product. Our core
+            values are; high supply reliability, consistent high quality,
+            constant smart innovations and short product development cycle.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="explore">
+      <div class="pro-con">
+        <h2>Our Products</h2>
+
+        <div id="cakes">
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img
+                src="../Cake Pics/Cake-with-a-Black-Forest-Flavour.jpeg"
+                alt="cake images"
+              />
+            </div>
+            <a href="../Shop/shop.html" class="carditem">
+              <div class="cakes-text">
+                <h3>Choco Lava cake</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>699.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/white forest.jpg " alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>White Forest cake</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>649.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/butterscotch.jpg" alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Butterscotch Cake</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>399.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/download.jpeg" alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Red Velvet cake</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>599.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/choco.jfif" alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Choco Balls</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>79.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img
+                src="../Cake Pics/valentines-day-puff-pastry-hearts-image.jpg"
+                alt=""
+              />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Strawberry Pastry</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>99.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/low-calorie-muffins-recipe.jpeg" alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Oats Muffin</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>59.00</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="cakes-box">
+            <div class="cakes-img">
+              <img src="../Cake Pics/IMG_0745-scaled.jpg" alt="" />
+            </div>
+            <a href="../Shop/shop.html">
+              <div class="cakes-text">
+                <h3>Sugar Pastry</h3>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>49.00</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="banner">
+      <h4>Deals of the Day</h4>
+      <h2>Up to <span>70% Off</span> in All Cakes & Pastries</h2>
+      <a href="#"> <button class="normal">Explore More</button></a>
+    </section>
+
+    <section id="feature">
+      <div class="box-1">
+        <div class="box1-text">
+          <h3>Makes Every Celebrations Memorable</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis
+            porta sapien, a feugiat eros bibendum nec. Etiam facilisis
+            ullamcorper
+          </p>
+        </div>
+        <div class="box1-img">
+          <img
+            src="../Cake Pics/little-pleassures-3-cropped-1546000168-removebg-preview (1).png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="box-2">
+        <div class="box2-img">
+          <img src="../Cake Pics/choco_chip_pastry_b.png" alt="" />
+        </div>
+        <div class="box2-text">
+          <h3>Hungry? Let's try some pastry..</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis
+            porta sapien, a feugiat eros bibendum nec. Etiam facilisis
+            ullamcorper
+          </p>
+        </div>
+      </div>
+      <div class="container-class">
+        <div class="background-bg">
+          <img src="../Cake Pics/Discount.png" alt="" class="bg-img" />
+          <div class="inner-content">
+            <div class="left">
+              <div class="text">
+                <h1 class="line1">BEST THING OF SEASON</h1>
+                <h3 class="line2">HURRY UP ! ORDER FAST</h3>
+              </div>
+              <div class="time">
+                <div class="specific-time">
+                  <p id="days">00</p>
+                  <span>Days</span>
+                </div>
+                <div class="specific-time" id="between">
+                  <p id="hours">00</p>
+                  <span>Hours</span>
+                </div>
+                <div class="specific-time">
+                  <p id="minutes">00</p>
+                  <span>Minutes</span>
+                </div>
+              </div>
+              <button class="order">ORDER NOW</button>
+            </div>
+            <img class="main-img" src="../Cake Pics/Image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="service-head">
+        <h1>Our Services</h1>
+      </div>
+      <div class="service-row">
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>Free Delivery</h1>
+          </div>
+          <div class="service-card-body">
+            <p>We offer free delivery as we bear the cost for you all</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>24X7 Support</h1>
+          </div>
+          <div class="service-card-body">
+            <p>
+              We provide products 24x7 because we want to ensure complete
+              satisfaction for you anytime
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-sharp fa-solid fa-cake-candles"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>Varieties</h1>
+          </div>
+          <div class="service-card-body">
+            <p>
+              We have an aura of various delicious items from which you can
+              choose
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>Expert Bakers</h1>
+          </div>
+          <div class="service-card-body">
+            <p>
+              We have one of the best bakers in our team , who cook delicious
+              confections.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-sharp fa-solid fa-credit-card"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>Secure Payment</h1>
+          </div>
+          <div class="service-card-body">
+            <p>
+              We have complete online secure payment , with simple rules and
+              regulations
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-logo">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="service-card-header">
+            <h1>Improvement Box</h1>
+          </div>
+          <div class="service-card-body">
+            <p>
+              If you have any suggestions for betterment of our services , you
+              can post an email on ebakery2022@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <h1 class="heading">OUR HAPPY CUSTOMERS</h1>
+      <br />
+      <h3 class="heading">WE VALUE OUR CUSTOMER FEEDBACK</h3>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <div class="carousel-box">
+            <div class="carousel-text">
+              <div class="carousel-heading">
+                <h2>
+                  Life is Short! Eat Your<br />
+                  Dessert First!!!!!!
+                </h2>
+                <br /><br />
+              </div>
+              <p class="review">
+                The chocolate flavors were too Yummy! I can suggest going with
+                friends and family. This place was nice with a good environment.
+              </p>
+              <br />
+              <br />
+              <div class="carousel-subheading">
+                <h3>ANISH SINGH</h3>
+              </div>
+            </div>
+
+            <div class="carousel-img">
+              <img src="../Carousel/img1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <div class="carousel-box">
+            <div class="carousel-text">
+              <div class="carousel-heading">
+                <h2>Great Items !</h2>
+                <br />
+                <br />
+              </div>
+
+              <p class="review">
+                Thoroughly satisfied with the products, will buy again !! Must
+                visit once ! <br />
+                <br />
+              </p>
+              <div class="carousel-subheading">
+                <h3>AMIT TRIVEDI</h3>
+              </div>
+            </div>
+
+            <div class="carousel-img">
+              <img src="../Carousel/img2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <div class="carousel-box">
+            <div class="carousel-text">
+              <div class="carousel-heading">
+                <h2>Affordable !</h2>
+                <br />
+                <br />
+              </div>
+
+              <p class="review">
+                Cakes and pastries are wonderful at reasonable prices , also
+                fast delivery !
+              </p>
+              <br />
+              <br />
+              <div class="carousel-subheading">
+                <h3>ANISHA ZEHRA</h3>
+              </div>
+            </div>
+
+            <div class="carousel-img">
+              <img src="../Carousel/img3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section id="footer" class="section-p1">
+      <div class="col">
+        <div class="foot-con">
+          <img src="../Cake Pics/logo.png" alt="" style="width: 130px" />
+          <h1>E-BAKERY</h1>
+        </div>
+
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col1">
+        <div class="contact-col">
+          <h4>Contact Us</h4>
+          <p><strong>Address: </strong> 879 Wellington Road,Street 32,India</p>
+          <p><strong>Phone: </strong> 022-7894-7456</p>
+          <p><strong>Service Time: </strong> 10.00am-10.00pm, Mon-Sat</p>
+        </div>
+      </div>
+
+      <div class="col1">
+        <h4>About Us</h4>
+        <a href="#about">About Us</a>
+        <a href="#service">Our Services</a>
+
+        <a href="#footer">Connect With Us</a>
+      </div>
+
+      <div class="col2">
+        <h4>My Account</h4>
+        <a href="../index.html">Log In</a>
+        <a href="../Sign Up/signUp.html">Sign Up</a>
+        <a href="../cartspage/index.html">Wishlists</a>
+        <a href="../cartspage/index.html">View Cart</a>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Made by BUGS_SLAYERS-All rights preserved</p>
+    </div>
+    <script src="hero2.js"></script>
+    <script src="../Carousel/carousel.js"></script>
+    <script src="hero.js"></script>
+  </body>
 </html>

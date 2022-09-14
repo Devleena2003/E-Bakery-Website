@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../Cake Pics/logo.png"
+      type="image/x-icon"
+      style="width: 100px"
+    />
+    <link rel="stylesheet" href="stye.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <!-- <img src="./Images/background-login.jpg" alt="" class="background-img"> -->
+    <img src="../../Cake Pics/banner.jpg" alt="" class="background-img" />
+    <div class="upper">
+      <!-- <button class="btn-upper">Back to Home</button>     why do we need these buttons if we already have register button in the form element?
+        <button class="btn-upper">Register</button> -->
+    </div>
+    <div class="form">
+      <div class="title-div">
+        <!-- <img class="logo-img" src="./Images/Logo.png" alt=""> -->
+        <h1 class="form-title"><u>E-BAKERY</u></h1>
+      </div>
+      <div class="form-content">
+        <h4>Enter Registered Email</h4>
+        <div id="bg"></div>
+        <form id="form">
+          <div class="form-field">
+            <div class="login-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
+              </svg>
+            </div>
+            <div class="email">
+              <input id="email" type="text" placeholder="Email" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <div class="login-svg" pass-svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-lock"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0zM6 9.3v2.4c0 .042.02.107.105.175A.637.637 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.637.637 0 0 0 9.5 9h-3a.637.637 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3z"
+                />
+                <path
+                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"
+                />
+              </svg>
+            </div>
+            <div class="password">
+              <input
+                id="password"
+                type="password"
+                placeholder="New Password"
+                required
+                class="p"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <div class="login-svg" cpass-svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-lock"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0zM6 9.3v2.4c0 .042.02.107.105.175A.637.637 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.637.637 0 0 0 9.5 9h-3a.637.637 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3z"
+                />
+                <path
+                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"
+                />
+              </svg>
+            </div>
+            <div class="password">
+              <input
+                id="confirmpass"
+                type="password"
+                placeholder="Confirm Password"
+                required
+                class="cp"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <button class="subbtn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

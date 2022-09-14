@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  padding-bottom: 50px;
 }
 
 .background {
@@ -91,7 +90,6 @@ body {
   height: 20px;
   transform: scale(200%);
   cursor: pointer;
-  position: relative;
 }
 .signup {
   color: #302121;
@@ -117,9 +115,6 @@ body {
   font-size: 40px;
   font-weight: bold;
 }
-
-
-
 
 /* #products {
   padding-top: 80px;
@@ -179,9 +174,6 @@ body {
   transform: scale(1.05);
 } */
 
-
-
-
 /* whats this going to be used for? */
 
 #pagination {
@@ -195,41 +187,29 @@ body {
   padding: 10px;
 }
 
-
-
-
 /* products section*/
 /* converted to grid format u can change to flex if u want
 that's upto the designer */
 
-#prodcontainer{
+#prodcontainer {
   display: grid;
-   grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
-   gap:2rem;
-   padding-right: 5%;
-   /* row-gap: 2rem; */
-   /* margin:0 15%; */
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2.5rem;
+  /* row-gap: 2rem; */
+  margin: 0 15%;
 }
 
-.card{
+.card {
   border: 2px solid black;
   border-radius: 10px;
   background-color: floralwhite;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap:1rem;
+  gap: 1rem;
 }
 
-.card .title{
-  font-size: 1rem;
-  color: #302121;
-  font-weight: bold;
-}
-
-.buttons-section{
+.buttons-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -238,17 +218,19 @@ that's upto the designer */
   border-radius: 20px;
 }
 
-.btn{
+.btn {
   padding: 15px;
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  transition:all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .btn:hover {
@@ -256,39 +238,33 @@ that's upto the designer */
   transform: scale(1.05);
 }
 
-
-.img-container{
+.img-container {
   width: 100%;
   height: 60%;
   margin-bottom: 20px;
 }
 
-img{
+img {
   object-fit: cover;
   width: 100%;
   height: 300px;
   border-radius: 30px;
 }
 
-
-
 /* comment :  make changes to design as necssary */
 /* this page can now render elements from database and then dispaly them on the page */
 
-
-
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-
 /* search filter styles */
 
-.search-container{
+.search-container {
   margin-left: 50%;
-  margin-top:10%;
+  margin-top: 10%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
@@ -296,7 +272,7 @@ img{
   transform: translateX(-50%);
 }
 
-#search{
+#search {
   height: 50px;
   border-radius: 20px;
   padding: 10px;
@@ -304,81 +280,13 @@ img{
   border: 1px solid gray;
 }
 
-#search:focus{
+#search:focus {
   outline: none;
 }
 
 /* small little search functionality trick */
 /* to hide elements that's not needed while searching */
 
-.hide{
+.hide {
   display: none;
 }
-
-.user{
-  color: #302121;
-  width:20px;
-  height:20px;
-  transform: scale(200%);
-  margin-left:20px;
-  cursor: pointer;
-}
-
-/* filter section */
-
-.content-div{
-  display: flex;
-  gap: 2rem;
-
-}
-
-.filtersection{
-  width: 30%;
-  border: 1px solid black;
-  list-style: none;
-  padding: 2rem;
-  height: min-content;
-  margin: 20px;
-  border-radius: 15px;
-  margin-left: 5%;
-}
-
-.filtersection ul{
-  list-style: none;
-  transition: 0.2s background-color ease-in;
-}
-
-.filtersection li{
-  padding: 10px;
-  font-size: 1.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.filtersection li:hover{
-  background-color: gray;
-}
-
-.prodcontainer{
-  width: 70%;
-}
-
-.bag::after{
-  content: attr(data-count);
-  position:absolute;
-  background-color: red;
-  color: floralwhite;
-  font-size: 0.5rem;
-  width: 10px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  top:10px;
-  left:10px;
-  /* opacity: 0; */
-  text-align: center;
-}
-
-/* .bag.live::after{
-  opacity: 1;
-} */
