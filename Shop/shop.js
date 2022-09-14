@@ -54,7 +54,11 @@ listitem.addEventListener('click',(e)=>{
 
 
 cartBagBtn.addEventListener('click',()=>{
-    window.location.assign('../cartspage/index.html')
+    if(localStorage.getItem("accessToken") != null)
+       window.location.assign('../cartspage/index.html')
+    else{
+        window.alert("You must be logged in to access cart")
+    }
 })
 
 
