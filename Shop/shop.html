@@ -95,30 +95,48 @@
 
       <!-- product section display -->
 
-      <section id="prodcontainer">
-        <!-- product card template -->
-        <template data-user-card>
-          <div class="card">
-            <!-- here goe the image -->
-            <div class="img-container" image-container>
-              <img src="" image />
-            </div>
-            <!-- title of image -->
-            <div class="title" data-title></div>
+      <div class="content-div">
 
-            <!-- description of image -->
-            <div class="description" data-description></div>
 
-            <!-- buttons in the card -->
-            <div class="buttons-section">
-              <button class="btn cartbtn" viewButton onclick="opencart(event)">
-                Add to cart
-              </button>
-              <!-- <button class="btn" viewButton>Buy</button> -->
+        <!-- filter section -->
+        
+        <div class="filtersection">
+          <ul class="filterlist">
+            <li class="filteritem"><button>All</button></li>
+            <li class="filteritem"><button>Cake</button></li>
+            <li class="filteritem"><button>Pastry</button></li>
+            <li class="filteritem"><button>Cheese</button></li>
+            <li class="filteritem"><button>Buns</button></li>
+            <li class="filteritem"><button>Butterscotch</button></li>
+            <li class="filteritem"><button>Cream Roll</button></li>
+            <li class="filteritem"><button>Truffle</button></li>
+          </ul>
+        </div>
+        <section id="prodcontainer">
+
+          <!-- product card template -->
+          <template data-user-card>
+            <div class="card">
+              <!-- here goe the image -->
+                <div class="img-container" image-container>
+                    <img src="" image/>
+                </div>
+                <!-- title of image -->
+                <div class="title" data-title></div>
+  
+                <!-- description of image -->
+                <div class="description" data-description></div>
+  
+                <!-- buttons in the card -->
+                <div class="buttons-section">
+                    <button class="btn" viewButton>Add to cart</button>
+                    <!-- <button class="btn" viewButton>Buy</button> -->
+                </div>
             </div>
-          </div>
         </template>
-      </section>
+        </section>
+      </div>
+      
 
       <!-- pagination section -->
 

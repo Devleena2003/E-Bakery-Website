@@ -204,14 +204,16 @@ that's upto the designer */
 
 #prodcontainer{
   display: grid;
-   grid-template-columns: repeat(auto-fit ,minmax(330px,1fr));
-   gap:2.5rem;
+   grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+   gap:2rem;
+   padding-right: 5%;
    /* row-gap: 2rem; */
-   margin:0 15%;
+   /* margin:0 15%; */
 }
 
 .card{
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 10px;
   background-color: floralwhite;
   padding: 1rem;
@@ -321,6 +323,64 @@ img{
   transform: scale(200%);
   margin-left:20px;
   cursor: pointer;
+}
+
+/* filter section */
+
+.content-div{
+  display: flex;
+  gap: 8rem;
+
+}
+
+.filtersection{
+  width: max-content;
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  list-style: none;
+  padding: 2rem;
+  height: min-content;
+  margin: 20px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.filtersection ul{
+  list-style: none;
+  transition: 0.2s background-color ease-in;
+}
+
+.filtersection li{
+  width: max-content;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+li button{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #302121;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+li button:focus{
+  background-color: #eeddcc;
+}
+
+/* .filtersection li:hover{
+  background-color: gray;
+} */
+
+.prodcontainer{
+  width: 70%;
 }
 
 .bag::after{

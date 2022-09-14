@@ -2,10 +2,56 @@ const productContainer = document.getElementById('prodcontainer')
 const userCard = document.querySelector("[data-user-card]")
 const cartBagBtn = document.querySelector('.right .bag')
 
-loginbtn = document.querySelector('.login')
-signupbtn = document.querySelector('.signup')
-rightsec = document.querySelector('.right')
-userProf = document.querySelector('[userp]')
+const loginbtn = document.querySelector('.login')
+const signupbtn = document.querySelector('.signup')
+const rightsec = document.querySelector('.right')
+const userProf = document.querySelector('[userp]')
+
+
+const listitem = document.querySelector('.filterlist')
+// for(let i=0;i<listitem.length;i++){
+//     // console.log("kasjfvbj")
+//     listitem[i].addEventListener('click',(e)=>{
+//         console.log(e.target.textContent)
+//         console.log("ajdvbjh")
+//     })
+// }
+
+
+//flter ist functionality
+
+listitem.addEventListener('click',(e)=>{
+    // console.log(listitem)
+    // console.log(listitem.children[1])
+    const val = e.target.textContent.toLowerCase();
+    // console.log(val)
+    // console.log(product_data)
+
+    if(val === "all"){
+        product_data.forEach(prod =>{
+            const visible = prod.title.toLowerCase().includes(val)
+            prod.element.classList.remove("hide", visible)
+        })
+    }
+
+    else{
+
+    product_data.forEach(prod =>{
+        prod.element.classList.remove("hide")
+        const visible = prod.title.toLowerCase().includes(val)
+        console.log(visible)
+        if (prod.element.classList.contains('hide')){
+            prod.element.classList.remove("hide")
+        }
+        else{
+            prod.element.classList.toggle("hide", !visible)
+        }
+    })
+}
+})
+
+
+
 
 cartBagBtn.addEventListener('click',()=>{
     window.location.assign('../cartspage/index.html')
