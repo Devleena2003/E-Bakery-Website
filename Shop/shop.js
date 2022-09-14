@@ -138,12 +138,14 @@ fetch('https://evening-refuge-31987.herokuapp.com/api/products')
         // console.log(card);
         const imgc = card.querySelector('[image]')
         const header = card.querySelector('[data-title]')
+        const price = card.querySelector('[data-price]')
         // console.log(header)
         const body = card.querySelector('[data-description]')
         const vbtn = card.querySelector('[viewButton]')
         imgc.src = prod['image']
-        header.textContent = prod['title'];
-        body.textContent = prod['description'];
+        header.textContent = prod.title;
+        body.textContent = prod.description;
+        price.textContent = `Price : ${prod.price}`
         vbtn.classList.add(prod['_id']);
         vbtn.value = prod['_id']
         productContainer.append(card);
