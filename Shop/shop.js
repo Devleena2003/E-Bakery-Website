@@ -147,6 +147,13 @@ fetch('https://evening-refuge-31987.herokuapp.com/api/products')
         vbtn.classList.add(prod['_id']);
         vbtn.value = prod['_id']
         productContainer.append(card);
+
+
+        vbtn.addEventListener('click',()=>{
+            console.log("sfkjvnjk")
+        })
+        
+        
         return {title: prod.title,element:card}
     })
 });
