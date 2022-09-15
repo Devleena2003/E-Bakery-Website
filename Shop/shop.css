@@ -204,12 +204,14 @@ body {
 that's upto the designer */
 
 #prodcontainer{
-  display: grid;
+   display: grid;
    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
-   gap:2rem;
-   padding-right: 5%;
-   /* row-gap: 2rem; */
-   /* margin:0 15%; */
+   gap:3rem;
+   /* width: 70%; */
+   padding: 2%;
+   padding-top: 1.2%;
+   flex: 9;
+   /* border: 2px solid black; */
 }
 
 .card{
@@ -283,31 +285,58 @@ img{
 .main-container{
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+  width: 100%;
 }
 
 
 /* search filter styles */
 
-.search-container{
+.search-main-container{
   margin-left: 50%;
   margin-top:10%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: space-around;
   transform: translateX(-50%);
   font-size: 1.2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  /* border: 2px solid black; */
+  padding: 20px 0;
+}
+
+.search-container{
+  /* margin-left: 50%;
+  margin-top:10%;
+  margin-bottom: 5%; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+  /* width: 100%; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* transform: translateX(-50%); */
 }
 
 #search{
-  height: 50px;
+  height: 60px;
   border-radius: 20px;
   padding: 10px;
   font-size: 1.2rem;
   border: 1px solid gray;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width:1000px;
 }
 
 #search:focus{
@@ -334,7 +363,13 @@ img{
 
 .content-div{
   display: flex;
-  gap: 8rem;
+  /* gap: 8rem; */
+}
+
+.filtercontainer{
+  flex: 3;
+  display: flex;
+  justify-content: center;
 }
 
 .filtersection{
@@ -343,9 +378,8 @@ img{
   list-style: none;
   padding: 2rem;
   height: min-content;
-  margin: 20px;
+  margin-top: 5%;
   border-radius: 15px;
-  margin-left: 5%;
 }
 
 .filtersection ul{
@@ -382,10 +416,6 @@ li button:focus{
   background-color: gray;
 } */
 
-.prodcontainer{
-  width: 70%;
-}
-
 .bag::after{
   content: attr(data-count);
   position:absolute;
@@ -411,4 +441,22 @@ li button:focus{
   color: #302121;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 598px){
+  .content-div{
+    flex-direction: column;
+    padding: none;
+    /* width: 100%; */
+  }
+}
+
+
+@media screen and (max-width:650px){
+  #search{
+    width: 100%;
+  }
+  .search-container{
+    width: 100%;
+  }
 }
