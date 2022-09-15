@@ -81,8 +81,18 @@ window.onload = function(){
             // console.log(data)
             if(data.cart === null)
                 incre.setAttribute('data-count',0)
-            else if(!data.cart.products.length || data.cart.products.length)
-                  incre.setAttribute('data-count',data.cart.products.length)
+            // else if(!data.cart.products.length || data.cart.products.length)
+            //       incre.setAttribute('data-count',data.cart.products.length)
+            else if(!data.cart.products.length)
+                incre.setAttribute('data-count',0)
+            else{
+                data = data.cart.products
+                data.forEach(d=>{
+                    // tot +=d
+                    incre.setAttribute('data-count',Number(incre.getAttribute('data-count'))+ d.quantity)
+                    console.log(incre.getAttribute('data-count'))
+                })
+            }
           })
 
         // incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
