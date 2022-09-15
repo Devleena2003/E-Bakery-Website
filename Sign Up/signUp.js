@@ -33,6 +33,8 @@ form.addEventListener('submit',registerUser);
     
         if(result.success){
             window.location.assign('../Login/index.html')
+        }else{
+            window.alert("User already exists")
         }
     }
     
