@@ -64,11 +64,19 @@ window.onload = function(){
             },
         }).then(res =>res.json())
           .then(data =>{
-            // console.log(data)
+            console.log(data)
             if(data.cart === null)
                 incre.setAttribute('data-count',0)
-            else if(!data.cart.products.length || data.cart.products.length)
-                  incre.setAttribute('data-count',data.cart.products.length)
+            else if(!data.cart.products.length)
+                incre.setAttribute('data-count',0)
+            else if(data.cart.products.length)
+                //   incre.setAttribute('data-count',incre.getAttribute('data-count'))
+                data = data.cart.products
+                data.forEach(d=>{
+                    // tot +=d
+                    incre.setAttribute('data-count',Number(incre.getAttribute('data-count'))+ d.quantity)
+                    console.log(incre.getAttribute('data-count'))
+                })
           })
 
 
