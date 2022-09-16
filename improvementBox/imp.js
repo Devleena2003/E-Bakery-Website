@@ -3,8 +3,26 @@ form.addEventListener('submit',loginUser);
 
 function loginUser(event){
     event.preventDefault();
-    const username = document.getElementById('email').value;
-    const msg = document.getElementById('msg').value;
-    console.log(username);
-    console.log(msg);
+    const username = document.getElementById('username').value;
+    const message = document.getElementById('msg').value;
+    const userId = localStorage.getItem('userid')
+
+    const data = {userId,username,message}
+
+    fetch(`https://evening-refuge-31987.herokuapp.com/api/users/testimonial/${localStorage.getItem("userid")}`,{
+        method:'POST',
+        mode:'cors',
+        headers:{
+            'Content-type': 'application/json',
+            'token' : `Bearer ${localStorage.getItem("accessToken")}`
+        },
+        body:JSON.stringify(data)
+    }).then((res)=>res.json())
+      .then(data=>{
+        console.log(data)
+        window.location.assign('../Hero+Navbar/hero.html')
+        alert("Thankyou for writing to us..we'll surely improve in future")
+      })
+    
+    
 }
