@@ -198,7 +198,7 @@ async function storeOrder(data){
 
     orderdata = {userId,orderId,amount,amount_due,amount_paid,currency,receipt}
 
-    const result = await fetch('http://localhost:5000/api/orders',{
+    const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/orders',{
         method:'POST',
         mode:'cors',
         headers:{
