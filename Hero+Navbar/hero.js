@@ -6,6 +6,13 @@ rightsec = document.querySelector('.right')
 // userProf = document.querySelector('[userp]')
 
 
+const writetoUs = document.getElementById('suggestions')
+
+writetoUs.addEventListener('click',()=>{
+    window.location.assign('../improvementBox/imp.html')
+})
+
+
 
 cartbtn.addEventListener('click',()=>{
     //if there si no accesToken get the user to login first

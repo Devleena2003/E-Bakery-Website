@@ -1,7 +1,7 @@
 const form=document.getElementById('form'); 
-form.addEventListener('submit',loginUser);
+form.addEventListener('submit',write);
 
-function loginUser(event){
+function write(event){
     event.preventDefault();
     const username = document.getElementById('username').value;
     const message = document.getElementById('msg').value;
