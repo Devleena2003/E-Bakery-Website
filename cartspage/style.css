@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +37,127 @@ body {
   padding-top: 10px;
   align-items: center;
   justify-content: center;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+  .navbar {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: none;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    /* margin-bottom: 5rem; */
+    background-color: #eeddcc;
+    background-color: none;
+
+    /* border: 1px solid black; */
+  }
+
+  .top-left {
+    display: flex;
+    margin-right: 50%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+
+    /* border:1px solid black; */
+  }
+
+  .logo-img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+
+  .logo a {
+    color: #302121;
+    text-decoration: none;
+    padding: 10px 0px;
+    /* line-height: 80px; */
+    transition: 0.5s;
+    font-size: 35px;
+    font-weight: bold;
+  } 
+  
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #302121;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding-top: 15px;
+
+    border: 1px solid black;
+  }
+
+  .user{
+    color: #302121;
+    width:20px;
+    height:20px;
+    transform: scale(200%);
+    cursor: pointer;
+  }
+
+  .logo-user{
+    font-size:17px;
+  }
+
+.my-cart{
+    margin-top: 50px;
+    text-align: center;
+    color: #302121;
+    font-size: 50px;
+}
+
+.card{
+    /* width: 500px; */
+    height: max-content;    
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+    /* margin-bottom: 30px; */
+    /* width:1000px; */
+    width: max-content;
+    background-color: #eeddcc;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* flex-direction: column; */
+}
+
+.prodimg{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    object-fit: cover;
+
+    /* border: 1px solid black; */
+>>>>>>> 2b036c9788f10acfa8aa4b05ba6d045b736f86b7
 }
 
 .logo-img {
@@ -43,6 +165,7 @@ body {
   aspect-ratio: 1;
 }
 
+<<<<<<< HEAD
 .logo a {
   color: #302121;
   text-decoration: none;
@@ -51,6 +174,15 @@ body {
   transition: 0.5s;
   font-size: 35px;
   font-weight: bold;
+=======
+.cart-items-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    gap: 1.5rem;
+>>>>>>> 2b036c9788f10acfa8aa4b05ba6d045b736f86b7
 }
 
 .right {
@@ -128,10 +260,19 @@ body {
   font-size: 25px;
 }
 
+<<<<<<< HEAD
 .prodcontent {
   line-height: 2;
   padding-left: 60px;
   color: #302121;
+=======
+.prodcontent{
+    line-height: 2;
+    padding-left: 60px;
+    color:#302121;
+    /* display: flex;
+    flex-direction: column; */
+>>>>>>> 2b036c9788f10acfa8aa4b05ba6d045b736f86b7
 }
 
 .price-buttons {
@@ -244,6 +385,7 @@ svg {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .ordertotal {
   /* display: flex; */
   justify-content: center;
@@ -277,3 +419,26 @@ svg {
 ::-webkit-scrollbar-thumb:hover {
   background: #462f2f;
 }
+=======
+.ordertotal{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center ;
+    margin: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #302121;
+    font-size: 1.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FBAB7E;
+    border: none;
+}
+
+@media screen and(max-width:1000px){
+    .cart-items-container{
+        flex-direction: column;
+    }
+}
+>>>>>>> 2b036c9788f10acfa8aa4b05ba6d045b736f86b7

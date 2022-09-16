@@ -110,7 +110,7 @@ window.onload = function(){
 
 loginbtn.addEventListener('click',()=>{
     if(localStorage.getItem("accessToken") == null){
-        window.location.assign('../index.html')
+        window.location.assign('../Login/index.html')
     }
 });
 
