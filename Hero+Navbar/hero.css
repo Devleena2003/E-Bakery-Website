@@ -547,6 +547,10 @@ body {
   border-radius: 7px;
   margin: 20px 10px 10px;
   background-color: #eeddcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: 0.3s;
   cursor: pointer;
 }
