@@ -116,6 +116,30 @@
     height: 100vh;
 }
 
+#addimg{
+  margin-top: 20px;
+  display: none;
+}
+
+.viewcartbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.viewcartbtn label{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  background-color: #302121;
+  color: floralwhite;
+  border-radius:10px;
+}
+
 .viewcart{
   cursor: pointer;
   display: flex;

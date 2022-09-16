@@ -87,14 +87,63 @@ rightsec = document.querySelector('.right')
 //     window.location.assign('../cartspage/index.html')
 // })
 
-window.onload = function(){
-    const incre = document.querySelector('.bag')
+// window.onload = function(){
+//     const incre = document.querySelector('.bag')
     
-    if(localStorage.getItem("accessToken") != null){
-        loginbtn.classList.add('hide')
-        signupbtn.classList.add('hide')
-        incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
-        const userprof = userProf.content.cloneNode(true).children[0]
-        rightsec.append(userprof)
-    }
-}
+//     if(localStorage.getItem("accessToken") != null){
+//         loginbtn.classList.add('hide')
+//         signupbtn.classList.add('hide')
+//         incre.setAttribute('data-count',localStorage.getItem("cartvalue"))
+//         const userprof = userProf.content.cloneNode(true).children[0]
+//         rightsec.append(userprof)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+    // window.onload = function(){
+    //     prof = document.querySelector('.profileImg')
+    //     // console.log(prof)
+    //     fetch(`https://evening-refuge-31987.herokuapp.com/api/users/profile/${localStorage.getItem("userid")}`,{
+    //         method:'GET',
+    //         mode:'cors',
+    //         headers:{
+    //             'Content-type': 'application/json',
+    //             'token': `Bearer ${localStorage.getItem("accessToken")}`
+    //         }
+    //     }).then(res=>res.json())
+    //       .then(data=>{
+    //         console.log(data.profusr.image)
+    //         imgurl = data.profusr.image
+    //         if(imgurl){prof.src = imgurl}
+    //       })
+    // }
+
+    // function profileimg(e){
+    //     console.log(e.target.files[0])
+    //     const formdata = new FormData()
+
+    //     formdata.append('userId',localStorage.getItem("userid"))
+    //     formdata.append('image',e.target.files[0])
+
+    //     fetch(`https://evening-refuge-31987.herokuapp.com/api/users/profile/${localStorage.getItem("userid")}`,{
+    //         method:'POST',
+    //         mode:'cors',
+    //         headers:{
+    //             'token': `Bearer ${localStorage.getItem("accessToken")}`
+    //         },
+    //         body:formdata
+    //     }).then(res=>res.json())
+    //       .then(data=>{
+    //         console.log(data)
+    //         window.location.assign('./index.html')
+    //       })
+    // }
