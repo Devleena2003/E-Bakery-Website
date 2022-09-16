@@ -50,7 +50,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
-  margin-bottom: 50px;
+  margin-bottom: -5%;
+  /* margin-bottom: 50px; */
   background-color: #eeddcc;
 
   /* border: 1px solid black; */
@@ -160,7 +161,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 12vh;
 }
 
 .text {

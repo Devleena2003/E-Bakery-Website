@@ -272,13 +272,15 @@ async function payement(e){
         };
         var rzp1 = new Razorpay(options);
         rzp1.on('payment.failed', function (response){
-                alert(response.error.code);
-                alert(response.error.description);
-                alert(response.error.source);
-                alert(response.error.step);
-                alert(response.error.reason);
-                alert(response.error.metadata.order_id);
-                alert(response.error.metadata.payment_id);
+                // alert(response.error.code);
+                // alert(response.error.description);
+                // alert(response.error.source);
+                // alert(response.error.step);
+                // alert(response.error.reason);
+                // alert(response.error.metadata.order_id);
+                // alert(response.error.metadata.payment_id);
+
+                alert("THE PAYEMENT FAILED PLEASE TRY AGIAN..IF MONEY WAS DEDUCTED IT WILL BE RETURED IN 2-3 WORKING DAYS")
         });
     })
 }
