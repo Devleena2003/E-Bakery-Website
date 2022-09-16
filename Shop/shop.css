@@ -28,7 +28,6 @@ body {
   overflow: hidden;
 }
 
-
 .logo-img {
   width: 100px;
   height: 100px;
@@ -44,14 +43,14 @@ body {
   /* border: 1px solid black; */
 }
 
-.top-left a{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.top-left a {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
 }
 
 .navbar {
   width: 100%;
-  height:max-content;
+  height: max-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,8 +129,6 @@ body {
   font-weight: bold;
 }
 
-
-
 /* whats this going to be used for? */
 
 #pagination {
@@ -145,27 +142,25 @@ body {
   padding: 10px;
 }
 
-
-
-
 /* products section*/
 /* converted to grid format u can change to flex if u want
 that's upto the designer */
 
-#prodcontainer{
-   display: grid;
-   grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
-   gap:3rem;
-   /* width: 70%; */
-   padding: 2%;
-   padding-top: 1.2%;
-   flex: 9;
-   /* border: 2px solid black; */
+#prodcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  /* width: 70%; */
+  padding: 2%;
+  padding-top: 1.2%;
+  flex: 9;
+  /* border: 2px solid black; */
 }
 
-.card{
+.card {
   border: 1px solid #302121;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 10px;
   background-color: floralwhite;
   padding: 1rem;
@@ -173,16 +168,16 @@ that's upto the designer */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
 }
 
-.card .title{
+.card .title {
   font-size: 1rem;
   color: #302121;
   font-weight: bold;
 }
 
-.buttons-section{
+.buttons-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -191,17 +186,19 @@ that's upto the designer */
   border-radius: 20px;
 }
 
-.btn{
+.btn {
   padding: 15px;
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  transition:all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .btn:hover {
@@ -209,41 +206,35 @@ that's upto the designer */
   transform: scale(1.05);
 }
 
-
-.img-container{
+.img-container {
   width: 100%;
   height: 60%;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-img{
+img {
   object-fit: cover;
   width: 100%;
   height: 300px;
   border-radius: 30px;
 }
 
-
-
 /* comment :  make changes to design as necssary */
 /* this page can now render elements from database and then dispaly them on the page */
 
-
-
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
 
-
 /* search filter styles */
 
-.search-main-container{
+.search-main-container {
   margin-left: 50%;
-  margin-top:5%;
+  margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
@@ -254,12 +245,12 @@ img{
   justify-content: space-around;
   transform: translateX(-50%);
   font-size: 1.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* border: 2px solid black; */
   padding: 20px 0;
 }
 
-.search-container{
+.search-container {
   /* margin-left: 50%;
   margin-top:10%;
   margin-bottom: 5%; */
@@ -268,7 +259,7 @@ img{
   gap: 1rem;
   width: max-content;
   font-size: 1.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* border: 2px solid black; */
   margin: 0 auto;
   /* width: 100%; */
@@ -278,52 +269,54 @@ img{
   /* transform: translateX(-50%); */
 }
 
-#search{
+#search {
   height: 60px;
   border-radius: 20px;
   padding: 10px;
   font-size: 1.2rem;
   border: 1px solid gray;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  width:800px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 800px;
 }
 
-#search:focus{
+#search:focus {
   outline: none;
 }
 
 /* small little search functionality trick */
 /* to hide elements that's not needed while searching */
 
-.hide{
+.hide {
   display: none;
 }
 
-.user{
+.user {
   color: #302121;
-  width:20px;
-  height:20px;
+  width: 20px;
+  height: 20px;
   transform: scale(200%);
-  margin-left:20px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
 /* filter section */
 
-.content-div{
+.content-div {
   display: flex;
   /* gap: 8rem; */
 }
 
-.filtercontainer{
+.filtercontainer {
   flex: 3;
   display: flex;
   justify-content: center;
 }
 
-.filtersection{
+.filtersection {
   width: max-content;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   list-style: none;
   padding: 2rem;
   height: min-content;
@@ -331,33 +324,34 @@ img{
   border-radius: 15px;
 }
 
-.filtersection ul{
+.filtersection ul {
   list-style: none;
   transition: 0.2s background-color ease-in;
 }
 
-.filtersection li{
+.filtersection li {
   width: max-content;
   padding: 10px;
   font-size: 1.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   cursor: pointer;
 }
 
-li button{
+li button {
   padding: 10px;
   border-radius: 20px;
   border: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   width: 200px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #302121;
   font-size: 1rem;
   font-weight: bold;
 }
 
-li button:focus{
+li button:focus {
   background-color: #eeddcc;
 }
 
@@ -365,17 +359,17 @@ li button:focus{
   background-color: gray;
 } */
 
-.bag::after{
+.bag::after {
   content: attr(data-count);
-  position:absolute;
+  position: absolute;
   background-color: red;
   color: floralwhite;
   font-size: 0.4rem;
   width: 10px;
   aspect-ratio: 1;
   border-radius: 50%;
-  top:10px;
-  left:10px;
+  top: 10px;
+  left: 10px;
   /* opacity: 0; */
   text-align: center;
 }
@@ -384,34 +378,49 @@ li button:focus{
   opacity: 1;
 } */
 
-
-[data-price]{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+[data-price] {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #302121;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 598px){
-  .content-div{
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #302121;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #462f2f;
+}
+
+@media screen and (max-width: 598px) {
+  .content-div {
     flex-direction: column;
     padding: none;
     gap: 1rem;
     /* width: 100%; */
   }
 
-  .right{
+  .right {
     display: none;
   }
-  
 }
 
-
-@media screen and (max-width:1000px){
-  #search{
+@media screen and (max-width: 1000px) {
+  #search {
     width: 100%;
   }
-  .search-container{
+  .search-container {
     width: 100%;
     padding: 0 10px;
   }
