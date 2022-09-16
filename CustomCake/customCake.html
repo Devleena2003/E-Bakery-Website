@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Bakery</title>
+    <link
+      rel="shortcut icon"
+      href="../Cake Pics/logo.png"
+      type="image/x-icon"
+      style="width: 100px"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section id="form">
+      <form>
+        <ul class="form-style-1">
+          <li>
+            <label>Full Name <span class="required"></span></label
+            ><input
+              type="text"
+              name="field1"
+              class="field-divided"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="field2"
+              class="field-divided"
+              placeholder="Last Name"
+            />
+          </li>
+          <li>
+            <label>Email <span class="required"></span></label>
+            <input type="email" name="field3" class="field-long" />
+          </li>
+          <li>
+            <label>Select flavour</label>
+            <select name="field4" class="field-select">
+              <option value="Advertise">Chocolate</option>
+              <option value="Partnership">Butterscotch</option>
+              <option value="General Question">Vanilla</option>
+              <option value="General Question">Blueberry</option>
+              <option value="General Question">Cranberry</option>
+            </select>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              placeholder="Add toppings"
+            />
+          </li>
+          <li>
+            <label>Your Message <span class="required"></span></label>
+            <textarea
+              name="field5"
+              id="field5"
+              class="field-long field-textarea"
+            ></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Submit" />
+          </li>
+        </ul>
+      </form>
+    </section>
+  </body>
+</html>
