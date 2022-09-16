@@ -185,6 +185,33 @@ async function removefunc(e){
     })
 }
 
+async function storeOrder(data){
+    // console.log(data);
+
+    userId = localStorage.getItem("userid")
+    orderId = data.id
+    amount = data.amount
+    amount_due = data.amount_due
+    amount_paid = data.amount_paid
+    currency = data.currency
+    receipt = data.receipt
+
+    orderdata = {userId,orderId,amount,amount_due,amount_paid,currency,receipt}
+
+    const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/orders',{
+        method:'POST',
+        mode:'cors',
+        headers:{
+            'Content-type': 'application/json',
+            'token':`Bearer ${localStorage.getItem("accessToken")}`
+        },
+        body:JSON.stringify(orderdata)
+    })
+
+    console.log(result.json())
+}
+
+
 async function payement(e){
     // console.log(totalcartvalue)
     
@@ -192,11 +219,14 @@ async function payement(e){
         method:'GET',
         mode:'cors',
         headers:{
-            'Content-type': 'application/json'
+            'Content-type': 'application/json',
         }
     }).then(res=>res.json())
       .then(data=>{
-        console.log(data)
+        // console.log(data)
+        
+        storeOrder(data)
+        
         paybtn = document.getElementById('rzp-button1').classList.remove('hide')
         document.getElementById('rzp-button1').onclick = function(e){
             rzp1.open();
