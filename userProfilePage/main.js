@@ -112,7 +112,7 @@ rightsec = document.querySelector('.right')
     // window.onload = function(){
     //     prof = document.querySelector('.profileImg')
     //     // console.log(prof)
-    //     fetch(`https://evening-refuge-31987.herokuapp.com/api/users/profile/${localStorage.getItem("userid")}`,{
+    //     fetch(`http://localhost:5000/api/users/profile/${localStorage.getItem("userid")}`,{
     //         method:'GET',
     //         mode:'cors',
     //         headers:{
@@ -127,23 +127,26 @@ rightsec = document.querySelector('.right')
     //       })
     // }
 
-    // function profileimg(e){
+    // document.getElementById('addimg').addEventListener('change',(e)=>{
+
     //     console.log(e.target.files[0])
     //     const formdata = new FormData()
 
     //     formdata.append('userId',localStorage.getItem("userid"))
     //     formdata.append('image',e.target.files[0])
 
-    //     fetch(`https://evening-refuge-31987.herokuapp.com/api/users/profile/${localStorage.getItem("userid")}`,{
+    //     fetch(`http://localhost:5000/api/users/profile/${localStorage.getItem("userid")}`,{
     //         method:'POST',
     //         mode:'cors',
     //         headers:{
+    //             'Content-Type': 'multipart/form-data; boundary=<calculated when request is sent>',
     //             'token': `Bearer ${localStorage.getItem("accessToken")}`
     //         },
     //         body:formdata
     //     }).then(res=>res.json())
     //       .then(data=>{
     //         console.log(data)
-    //         window.location.assign('./index.html')
+    //         // window.location.assign('./index.html')
     //       })
-    // }
+        
+    // })
