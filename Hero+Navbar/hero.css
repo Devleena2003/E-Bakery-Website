@@ -790,11 +790,12 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 0px;
+  margin: 30px -40px;
 }
 
-#between {
-  margin: 0px 20px;
+#between,
+#end {
+  margin: 0 20px;
 }
 
 .order {
@@ -812,7 +813,9 @@ img {
   margin: 40px 0px;
   cursor: pointer;
 }
-
+.order-btn {
+  text-decoration: none;
+}
 .specific-time p {
   font-size: 40px;
   margin-bottom: -14px;
