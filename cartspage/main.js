@@ -11,7 +11,7 @@ const pdata = []
 let amount = 0
 let payementid = 0
 
-fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${localStorage.getItem("userid")}`,{
     method: 'GET',
     mode:'cors',
     headers:{
@@ -41,7 +41,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
     // console.log(data)
     data.forEach(prod =>{
         // console.log(prod)
-        fetch(`https://evening-refuge-31987.herokuapp.com/api/products/${prod.productId}`)
+        fetch(`https://kind-blue-penguin-boot.cyclic.app/api/products/${prod.productId}`)
         .then(res =>res.json())
         .then(data => {
             const proditem = data.product
@@ -83,7 +83,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
                     console.log({productId})
 
                     
-                    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+                    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${localStorage.getItem("userid")}`,{
                         method:'PUT',
                         mode:'cors',
                         headers:{
@@ -103,7 +103,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
                     // console.log({productId})
 
                     
-                    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${itemcnt.textContent}`,{
+                    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${itemcnt.textContent}`,{
                         method:'POST',
                         mode:'cors',
                         headers:{
@@ -134,7 +134,7 @@ fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getIt
         
                 
                 const prodData = {userId,products}
-                fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
+                fetch('https://kind-blue-penguin-boot.cyclic.app/api/carts',{
                 method: 'POST',
                 mode:'cors',
                 headers:{
@@ -170,7 +170,7 @@ async function removefunc(e){
 
     // console.log(data)
 
-    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${localStorage.getItem("userid")}`,{
         method:'PUT',
         mode:'cors',
         headers:{
@@ -198,7 +198,7 @@ async function storeOrder(data){
 
     orderdata = {userId,orderId,amount,amount_due,amount_paid,currency,receipt}
 
-    const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/orders',{
+    const result = await fetch('https://kind-blue-penguin-boot.cyclic.app/api/orders',{
         method:'POST',
         mode:'cors',
         headers:{
@@ -215,7 +215,7 @@ async function storeOrder(data){
 async function payement(e){
     // console.log(totalcartvalue)
     
-    fetch(`https://evening-refuge-31987.herokuapp.com/api/getorder/${amount}`,{
+    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/getorder/${amount}`,{
         method:'GET',
         mode:'cors',
         headers:{
@@ -247,7 +247,7 @@ async function payement(e){
                 payementid = response.razorpay_payment_id;
                 console.log(payementid);
                 if(payementid.length > 1){
-                    fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+                    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${localStorage.getItem("userid")}`,{
                         method:'DELETE',
                         mode:'cors',
                         headers:{

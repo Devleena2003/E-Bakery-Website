@@ -9,7 +9,7 @@ async function loginUser(event){
     const data = {username,password};
     // console.log(data);
 
-    const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/auth/login/',{
+    const result = await fetch('https://kind-blue-penguin-boot.cyclic.app/api/auth/login/',{
         method: 'POST',
         mode:'cors',
         headers:{
@@ -33,7 +33,7 @@ async function loginUser(event){
     if(result.success){
         localStorage.setItem("accessToken",result.accessToken)
         localStorage.setItem("userid",result.others._id)
-        fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${result.others._id}`,{
+        fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${result.others._id}`,{
             method: 'GET',
             mode:'cors',
             headers:{

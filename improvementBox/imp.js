@@ -9,7 +9,7 @@ function write(event){
 
     const data = {userId,username,message}
 
-    fetch(`https://evening-refuge-31987.herokuapp.com/api/users/testimonial/${localStorage.getItem("userid")}`,{
+    fetch(`https://kind-blue-penguin-boot.cyclic.app/api/users/testimonial/${localStorage.getItem("userid")}`,{
         method:'POST',
         mode:'cors',
         headers:{

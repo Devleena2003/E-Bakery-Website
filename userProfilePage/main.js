@@ -23,7 +23,7 @@ subbtn.addEventListener('click',(e)=>{
     if(email.length && (!confpass.length && !pass.length)){
         console.log("email")
         data = {email}
-        fetch(`https://evening-refuge-31987.herokuapp.com/api/users/${localStorage.getItem("userid")}`,{
+        fetch(`https://kind-blue-penguin-boot.cyclic.app/api/users/${localStorage.getItem("userid")}`,{
             method:'PUT',
             mode:'cors',
             headers:{
@@ -39,7 +39,7 @@ subbtn.addEventListener('click',(e)=>{
     }else if(email.length && ((confpass.length > 0 && pass.length > 0) && (confpass === pass))){
         password = confpass
         data = {email,password}
-        fetch(`https://evening-refuge-31987.herokuapp.com/api/users/${localStorage.getItem("userid")}`,{
+        fetch(`https://kind-blue-penguin-boot.cyclic.app/api/users/${localStorage.getItem("userid")}`,{
             method:'PUT',
             mode:'cors',
             headers:{
@@ -55,7 +55,7 @@ subbtn.addEventListener('click',(e)=>{
     }else if(!email.length && ((confpass.length > 0 && pass.length > 0) && (confpass === pass))){
         password = confpass
         data = {password}
-        fetch(`https://evening-refuge-31987.herokuapp.com/api/users/${localStorage.getItem("userid")}`,{
+        fetch(`https://kind-blue-penguin-boot.cyclic.app/api/users/${localStorage.getItem("userid")}`,{
             method:'PUT',
             mode:'cors',
             headers:{

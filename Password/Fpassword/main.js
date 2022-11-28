@@ -19,7 +19,7 @@ sub.addEventListener('click',async (e)=>{
     const email = document.getElementById('email').value;
     // console.log(email);
     
-    const res = await (await fetch(`https://evening-refuge-31987.herokuapp.com/api/users/verify/${email}`)).json();
+    const res = await (await fetch(`https://kind-blue-penguin-boot.cyclic.app/api/users/verify/${email}`)).json();
     console.log(res)
 
     if(res.success){
@@ -43,7 +43,7 @@ sub.addEventListener('click',async (e)=>{
         cnf.addEventListener("click",async ()=>{
             const password = document.getElementById('password').value;
 
-            const res = await fetch('https://evening-refuge-31987.herokuapp.com/api/users/changepass/pass',{
+            const res = await fetch('https://kind-blue-penguin-boot.cyclic.app/api/users/changepass/pass',{
                 method: 'PUT',
                 mode:'cors',
                 headers:{

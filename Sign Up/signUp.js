@@ -20,7 +20,7 @@ form.addEventListener('submit',registerUser);
         const userData = {username,email,password}
         console.log(userData)
     
-        const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/auth/register/',{
+        const result = await fetch('https://kind-blue-penguin-boot.cyclic.app/api/auth/register/',{
             method: 'POST',
             mode:'cors',
             headers:{
