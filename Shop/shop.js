@@ -69,7 +69,7 @@ window.onload = function(){
         loginbtn.classList.add('hide')
         signupbtn.classList.add('hide')
 
-        const cartv = fetch(`https://evening-refuge-31987.herokuapp.com/api/carts/${localStorage.getItem("userid")}`,{
+        const cartv = fetch(`https://kind-blue-penguin-boot.cyclic.app/api/carts/${localStorage.getItem("userid")}`,{
             method: 'GET',
             mode:'cors',
             headers:{
@@ -137,7 +137,7 @@ searchInput.addEventListener("input", (e) =>{
 })
 
 
-fetch('https://evening-refuge-31987.herokuapp.com/api/products')
+fetch('https://kind-blue-penguin-boot.cyclic.app/api/products')
    .then((res) => res.json())
    .then((data) =>{
     console.log(data);
@@ -212,7 +212,7 @@ async function opencart(e){
         prodData = {userId,products};
         // console.log(prodData)
 
-        const result = await fetch('https://evening-refuge-31987.herokuapp.com/api/carts',{
+        const result = await fetch('https://kind-blue-penguin-boot.cyclic.app/api/carts',{
             method: 'POST',
             mode:'cors',
             headers:{

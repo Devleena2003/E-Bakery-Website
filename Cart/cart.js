@@ -18,7 +18,7 @@ searchInput.addEventListener("input", (e) =>{
 })
 
 
-fetch('https://evening-refuge-31987.herokuapp.com/api/products')
+fetch('https://kind-blue-penguin-boot.cyclic.app/api/products')
    .then((res) => res.json())
    .then((data) =>{
     // console.log(data);
